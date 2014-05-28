@@ -79,8 +79,13 @@ JB :
   #
   comments :
     provider : duoshuo
-    duoshuo : 
+    disqus : 
       short_name : orangeprince
+    livefyre :
+      site_id : 1234
+    duoshuo :
+      name : orangeprince
+
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
   # Set 'provider' to false to turn analytics off globally.

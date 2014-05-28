@@ -1,0 +1,2 @@
+var duoshuo_name = '';
+var duoshuoQuery = {short_name:duoshuo_name};
