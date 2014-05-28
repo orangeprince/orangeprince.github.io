@@ -1,6 +1,7 @@
 <!-- Duoshuo Comment BEGIN -->  
 	<div class="ds-thread"></div>  
 <script type="text/javascript">  
+var duoshuo_name = '';
 var duoshuoQuery = {short_name:"orangeprince"};  
 	(function() {  
 		var ds = document.createElement('script');  
