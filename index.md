@@ -9,3 +9,8 @@ title: 富贵闲人
   <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
+
+      <section style="width:250px;">
+        <h3>Recently Visitors</h3>
+          <ul class="ds-recent-visitors" data-num-items="4" data-avatar-size="45" style="margin-top:10px;"></ul>
+      </section>
