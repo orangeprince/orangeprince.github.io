@@ -79,12 +79,8 @@ JB :
   #
   comments :
     provider : duoshuo
-    disqus : 
-      short_name : orangeprince
-    livefyre :
-      site_id : 1234
     duoshuo :
-      name : orangeprince
+      short_name : orangeprince
 
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
