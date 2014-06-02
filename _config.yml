@@ -79,7 +79,7 @@ JB :
   #
   comments :
     provider : duoshuo
-    duoshuo	:
+    duoshuo :
       short_name : orangeprince
 
   # Settings for analytics helper
