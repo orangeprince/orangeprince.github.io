@@ -1,9 +1,7 @@
 ---
 layout: page
 title: 富贵闲人
----
-{% include JB/setup %}
-
+---{% include JB/setup %}
 <ul class="posts">
 {% for post in site.posts %}
   <li><span>{{ post.date | date_to_string }}</span>  <a href="{{ post.url }}">{{ post.title }}</a></li>
