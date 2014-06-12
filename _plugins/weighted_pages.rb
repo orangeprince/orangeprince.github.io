@@ -8,8 +8,9 @@ module Jekyll
     safe true
 
     def generate(site)
-      site.config['weighted_pages'] = site.pages.sort_by { |a| 
-        a.data['weight'] ? a.data['weight'] : site.pages.length }
+      #site.config['weighted_pages'] = site.pages.sort_by { |a| 
+      #  a.data['weight'] ? a.data['weight'] : site.pages.length }
+      site.config['weighted_pages'] = site.pages
     end
 
   end
