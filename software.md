@@ -5,4 +5,4 @@ group: navigation
 weight: 4
 ---
 {% include JB/setup %}
-浙江大学博士论文\\( \Latex \\)模板
+浙江大学博士论文\\[ \Latex \\]模板
