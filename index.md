@@ -9,32 +9,29 @@ title: 富贵闲人
 {% endfor %}
 </ul>
 
-<div id="pagination">
-<div class="pagenavi">
-<span class="page_number">第{{paginator.page}}页/共{{paginator.total_pages}}页</span>
-<a href="/">第一页</a>
-{% if paginator.previous_page %}
-{% if paginator.previous_page == 1 %}
-<a href="/" class="current"><<前一页</a>
-{% else %}
-<a href="/page{{paginator.previous_page}}"><<前一页</a>
-{% endif %}
-{% else %}
-<span><<前一页</span>
-{% endif %}
-{% for count in (2..paginator.total_pages) limit:8 %}
-{% if count == paginator.page %}
-<span class="current-page">{{count}}</span>
-{% else %}
-<a href="/page{{count}}">{{count}}</a>
-{% endif %}
-{% endfor %}
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+  {% else %}
+    <span>&laquo; Prev</span>
+  {% endif %}
 
-{% if paginator.next_page %}
-<a href="/page{{paginator.next_page}}">后一页>></a>
-{% else %}
-<span>后一页>></span>
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <em>{{ page }}</em>
+    {% elsif page == 1 %}
+      <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+  {% else %}
+    <span>Next &raquo;</span>
+  {% endif %}
+</div>
 {% endif %}
-<a href="/page{{paginator.total_pages}}">最后一页</a>
-</div>
-</div>
+
