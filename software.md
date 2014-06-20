@@ -13,4 +13,5 @@ weight: 4
 本人和其他一些同学的博士学位论文都实用改软件包完成，顺利通过学院答辩，所以请放心使用。软件包参考了一些[latex论文模板](https://code.google.com/p/zjuthesistex/),在此对这些软件包的作者表示感谢。
 
 使用方法：
-	xelatex main.tex
+	1. compile the bib file twice if needed, i.e. repeart bibtex zjulib
+	2. run xelatex main.tex
