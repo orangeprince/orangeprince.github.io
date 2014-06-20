@@ -17,5 +17,7 @@ weight: 4
 	1. compile the bib file twice if needed, e.g., bibtex zjulib
 	2. xelatex main.tex
 
+下载地址：[点击链接下载]()
+</p>
 更多的软件会被陆续添加，敬请期待:-)
 ---
