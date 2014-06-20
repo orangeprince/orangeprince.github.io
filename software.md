@@ -14,5 +14,5 @@ weight: 4
 
 使用方法：
 
-	1. compile the bib file twice if needed, i.e. repeart bibtex zjulib
-	2. run xelatex main.tex
+	1. compile the bib file twice if needed, e.g., bibtex zjulib
+	2. xelatex main.tex
