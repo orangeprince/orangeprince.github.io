@@ -13,7 +13,14 @@ layout: default
 	{% endif %}
 	    <div class="entry-wrapper">
       <header class="entry-header">
-        <b>标签</b>：<span class="entry-tags">{% for tag in page.tags %}<a href="{{ site.url }}/tags.html#{{ tag }}-ref" title="Pages tagged {{ tag }}">{{ tag }}</a>{% unless forloop.last %}&nbsp;&bull;&nbsp;{% endunless %}{% endfor %}</span>
+        <b>标签</b>：<span class="entry-tags">{% for tag in page.tags %}<a href="{{ site.url }}/tags.html#{{ tag }}-ref" title="Pages tagged {{ tag }}">{{ tag }}</a>{% unless forloop.last %}&nbsp;&bull;&nbsp;{% endunless %}{% endfor %}
+		{% if page.previous %}
+			<a rel="prev" href="{{ page.previous.url }}" class="btn" title="View {{ page.previous.title }}">上一篇</a>
+		{% endif %}
+		{% if page.next %}
+			<a rel="next" href="{{ page.next.url }}" class="btn" title="View {{ page.next.title }}">下一篇</a>
+		{% endif %}
+</span>
      <hr>
 
 	<div class="post-content">{{ content }}</div>
@@ -24,11 +31,4 @@ layout: default
         <div class="ds-thread" {% if page.id %}data-thread-key="{{ page.id }}"{% endif %}  data-title="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}"></div>
     </div>
 
-		{% if page.previous %}
-			<a rel="prev" href="{{ page.previous.url }}" class="btn" title="View {{ page.previous.title }}">上一篇</a>
-		{% endif %}
-		
-		{% if page.next %}
-			<a rel="next" href="{{ page.next.url }}" class="btn" title="View {{ page.next.title }}">下一篇</a>
-		{% endif %}
 </article>
