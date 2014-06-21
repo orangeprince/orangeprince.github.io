@@ -6,4 +6,9 @@ permalink: /:year/:month/:day/:title/
 paginate: 10
 pygments: true
 
+comments :
+  provider : duoshuo
+  duoshuo :
+    short_name : orangeprince
+
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
