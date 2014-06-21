@@ -19,4 +19,15 @@ layout: default
     <div id="comments">
         <div class="ds-thread" {% if page.id %}data-thread-key="{{ page.id }}"{% endif %}  data-title="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}"></div>
     </div>
+
+		<nav class="pagenation">
+		<ul>
+		{% if page.previous %}
+			<li class="before left"><a rel="prev" href="{{ page.previous.url }}" class="btn" title="View {{ page.previous.title }}">Before</a></li>
+		{% endif %}
+		{% if page.next %}
+			<li class="next right"><a rel="next" href="{{ page.next.url }}" class="btn" title="View {{ page.next.title }}">Next</a></li>
+		{% endif %}
+		</ul>
+		</nav>
 </article>
