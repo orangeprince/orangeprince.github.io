@@ -3,7 +3,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 140%;
+	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -144,7 +144,7 @@ h3 {
 	text-align: right;
 	width: 160px;
 	top: 0;
-	left: -240px;
+	left: -280px;
 }
 
 #sidebar li {
