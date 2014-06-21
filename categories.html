@@ -1,0 +1,52 @@
+---
+layout: default
+title: 分类
+---
+
+<ul class="tag_box inline">
+  {% assign categories_list = site.categories %}
+{% if site.JB.categories_list.provider == "custom" %}
+  {% include custom/categories_list %}
+{% else %}
+  {% if categories_list.first[0] == null %}
+    {% for category in categories_list %}
+        <li><a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ category }}-ref">
+                {{ category | join: "/" }} <span>{{ site.categories[category].size }}</span>
+        </a></li>
+    {% endfor %}
+  {% else %}
+    {% for category in categories_list %}
+        <li><a href="{{ BASE_PATH }}{{ site.JB.categories_path }}#{{ category[0] }}-ref">
+                {{ category[0] | join: "/" }} <span>{{ category[1].size }}</span>
+        </a></li>
+    {% endfor %}
+  {% endif %}
+{% endif %}
+{% assign categories_list = nil %}
+</ul>
+
+
+{% for category in site.categories %} 
+  <h2 id="{{ category[0] }}-ref">{{ category[0] | join: "/" }}</h2>
+  <ul>
+    {% assign pages_list = category[1] %}  
+{% if site.JB.pages_list.provider == "custom" %}
+  {% include custom/pages_list %}
+{% else %}
+  {% for node in pages_list %}
+    {% if node.title != null %}
+      {% if group == null or group == node.group %}
+        {% if page.url == node.url %}
+        <li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.title}}</a></li>
+        {% else %}
+        <li><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
+        {% endif %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+{% assign pages_list = nil %}
+{% assign group = nil %}
+  </ul>
+{% endfor %}
+
