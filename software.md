@@ -11,8 +11,13 @@ title : Software
 
 使用方法：
 
-	1. compile the bib file twice if needed, e.g., bibtex zjulib
-	2. xelatex main.tex
+{% highlight ruby %}
+#compile the bib file twice if needed, e.g., 
+bibtex zjulib
+bibtex zjulib
+#complile the tex file
+xelatex main.tex
+{% endhighlight %}
 
 下载地址：[点击链接下载](files/zjucs_thesis.zip)
     
