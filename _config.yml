@@ -1,6 +1,6 @@
-name: Fuck You
-url: http://example.org
-description: A stylish blog using the Solarized color palette
+name: 富贵闲人
+url: http://orangeprince.info
+description: orangeprince's blog
 
 permalink: /:year/:month/:day/:title/
 paginate: 10
