@@ -14,7 +14,7 @@ layout: default
 	    <div class="entry-wrapper">
       <header class="entry-header">
 	<div>
-        <b>标签</b>:<span style="float:left">{% for tag in page.tags %}<a href="{{ site.url }}/tags.html#{{ tag }}-ref" title="Pages tagged {{ tag }}">{{ tag }}</a>{% unless forloop.last %}&nbsp;&bull;&nbsp;{% endunless %}{% endfor %} </span>
+        <span style="float:left"><b>标签</b>:{% for tag in page.tags %}<a href="{{ site.url }}/tags.html#{{ tag }}-ref" title="Pages tagged {{ tag }}">{{ tag }}</a>{% unless forloop.last %}&nbsp;&bull;&nbsp;{% endunless %}{% endfor %} </span>
 	<span style="float:right">
 		<b>导航</b>:
 		{% if page.previous %}
