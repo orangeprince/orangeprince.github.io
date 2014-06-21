@@ -1,6 +1,5 @@
 ---
-layout: page
-group: navigation
+layout: default
 title : 关于
 ---
 关于本站
