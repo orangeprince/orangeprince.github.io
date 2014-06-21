@@ -13,7 +13,7 @@ layout: default
 	{% endif %}
 	    <div class="entry-wrapper">
       <header class="entry-header">
-        标签：<span class="entry-tags">{% for tag in page.tags %}<a href="{{ site.url }}/tags.html#{{ tag }}-ref" title="Pages tagged {{ tag }}">{{ tag }}</a>{% unless forloop.last %}&nbsp;&bull;&nbsp;{% endunless %}{% endfor %}</span>
+        <b>标签</b>：<span class="entry-tags">{% for tag in page.tags %}<a href="{{ site.url }}/tags.html#{{ tag }}-ref" title="Pages tagged {{ tag }}">{{ tag }}</a>{% unless forloop.last %}&nbsp;&bull;&nbsp;{% endunless %}{% endfor %}</span>
     
      <hr>
 
