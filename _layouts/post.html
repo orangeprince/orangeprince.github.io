@@ -15,8 +15,8 @@ layout: default
       <header class="entry-header">
         标签：<span class="entry-tags">{% for tag in page.tags %}<a href="{{ site.url }}/tags.html#{{ tag }}-ref" title="Pages tagged {{ tag }}">{{ tag }}</a>{% unless forloop.last %}&nbsp;&bull;&nbsp;{% endunless %}{% endfor %}</span>
     
-	---------------------------------------
-     
+     <hr>
+
 	<div class="post-content">{{ content }}</div>
 
 	<p class="meta">发表于 <span class="postdate">{{ page.date | date: "%Y-%m-%d" }}</span></p>
