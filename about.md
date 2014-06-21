@@ -1,10 +1,8 @@
 ---
 layout: page
 group: navigation
-weight: 5
 title : 关于
 ---
-{% include JB/setup %}      
 关于本站
 ---
 <p/>   
