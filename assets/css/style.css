@@ -279,3 +279,5 @@ img.center {
 .icon-anchor {
 	font-size: 65%;
 }
+code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inherit;}
+
