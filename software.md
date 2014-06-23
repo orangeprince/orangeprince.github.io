@@ -19,7 +19,7 @@ bibtex zjulib
 xelatex main.tex
 {% endhighlight %}
 
-下载地址：[点击链接下载](files/zjucs_thesis.zip)
+下载地址：[点击链接下载](assets/files/zjucs_thesis.zip)
     
     
 更多的软件会被陆续添加，敬请期待:-)
