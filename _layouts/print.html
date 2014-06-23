@@ -48,9 +48,8 @@ MathJax.Hub.Queue(function() {
                 <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
         {% endif %}
             <div class="entry-wrapper">
-        <span style="float:left">
                 <b>标签</b>：{% for tag in page.tags %}{{ tag }}{% unless forloop.last %}&nbsp;&bull;&nbsp;{% endunless %}{% endfor %}
-        </span>  
+            <div>
      <hr>
 
         <div class="post-content">{{ content }}</div>
