@@ -56,7 +56,7 @@ sup { vertical-align: super; font-size: 0.85em; }
 sub { vertical-align: sub; font-size: 0.85em; }
 
 code {
-    font: 0.9em Monaco, Courier, Monospace;
+    font: 0.9em Monaco, Consolas, Courier, Monospace;
 }
 
 blockquote {
