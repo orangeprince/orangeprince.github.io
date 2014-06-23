@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width">
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <link href="/assets/css/style.css" rel="stylesheet" />
+  <link href="/assets/css/colors-dark.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="/images/favicon.ico">
+    <script>
+MathJax.Hub.Config({
+            tex2jax: {
+                    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+                        }
+                        });
+MathJax.Hub.Queue(function() {
+            var all = MathJax.Hub.getAllJax(), i;
+                for(i=0; i < all.length; i += 1) {
+                        all[i].SourceElement().parentNode.className += ' has-jax';
+                            }
+                            });
+    </script>
+</head>
+
+<body>
+
+
+
+  <header id="header">
+    <h1><a href="/"><i class="icon-sun"></i> {{ site.name }}</a></h1>
+    <p>{{ site.description }}</p>
+  </header>
+
+
+
+  <div id="page">
+
+    <article class="post">
+
+        {% if page.external-url %}
+                <h1>
+                        <a href="{{ page.external-url }}">{{ page.title }}</a>
+                        <a class="anchor" href="{{ page.url }}"><i class="icon-anchor"></i></a>
+                </h1>
+        {% else %}
+                <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+        {% endif %}
+            <div class="entry-wrapper">
+        <span style="float:left">
+                <b>标签</b>：{% for tag in page.tags %}<a href="{{ site.url }}/tags.html#{{ tag }}-ref" title="Pages tagged {{ tag }}">{{ tag }}</a>{% unless forloop.last %}&nbsp;&bull;&nbsp;{% endunless %}{% endfor %}
+        </span>
+        <span style="float:right">
+                <b>导航</b>:
+                {% if page.previous %}
+                        <a rel="prev" href="{{ page.previous.url }}" class="btn" title="View {{ page.previous.title }}">上一篇</a>
+                {% endif %}
+                {% if page.previous & page.next %}
+                |
+                {% endif %}
+                {% if page.next %}
+                        <a rel="next" href="{{ page.next.url }}" class="btn" title="View {{ page.next.title }}">下一篇</a>
+                {% endif %}
+        </span>  &nbsp
+     <hr>
+
+        <div class="post-content">{{ content }}</div>
+
+        <p class="meta">发表于 <span class="postdate">{{ page.date | date: "%Y-%m-%d" }}</span></p>
+    </div>
+
+
+
+  </div>
+
+  <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+  <script src="/assets/js/jquery.mobilemenu.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('#sidebar nav ul').mobileMenu({'topOptionText': 'Menu', 'prependTo': '#sidebar nav'});
+    });
+  </script>
+
+
+</body>
+</html>
