@@ -7,4 +7,4 @@ paginate: 10
 pygments: true
 
 
-exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile', 'commit.sh']
