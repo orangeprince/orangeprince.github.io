@@ -1,6 +1,6 @@
 name: 富贵闲人
 url: http://orangeprince.info
-description: orangeprince's blog
+description: Just for fun
 
 permalink: /:year/:month/:day/:title/
 paginate: 10
