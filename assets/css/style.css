@@ -56,7 +56,7 @@ sup { vertical-align: super; font-size: 0.85em; }
 sub { vertical-align: sub; font-size: 0.85em; }
 
 code {
-font-family:Monaco,Menlo,Consolas,"Courier New",monospace;font-size:15px;color:#268bd2;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;
+font-family:Monaco,Menlo,Consolas,"Courier New",monospace;font-size:14px;color:#268bd2;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;
 }
 
 blockquote {
