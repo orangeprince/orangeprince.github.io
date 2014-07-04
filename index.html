@@ -19,9 +19,9 @@ title: 富贵闲人
 		<div class="post-content">
             {% if post.content contains '<!--more-->' %}
                 {{ post.content | split:'<!--more-->' | first }}
+                <a href="{{ post.external-url }}"> ------ 继续阅读 ------></a>
             {% else %}
                 {{ post.content }}
-                <a href="{{ post.external-url }}">{{ post.title }}</a>
             {% endif %}
         </div>
 
