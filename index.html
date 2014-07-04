@@ -21,8 +21,8 @@ title: 富贵闲人
                 {{ post.content | split:'<!--more-->' | first }}
             {% else %}
                 {{ post.content }}
+                <a href="{{ post.external-url }}">{{ post.title }}</a>
             {% endif %}
-            <a href="{{ post.external-url }}">continue reading</a>
         </div>
 
 	</article>
