@@ -19,7 +19,7 @@ title: 富贵闲人
 		<div class="post-content">
             {% if post.content contains '<!--more-->' %}
                 {{ post.content | split:'<!--more-->' | first }}
-                <p><a href="{{ post.url }}"> ========== 继续阅读 ==========></a></p>
+                <p><a href="{{ post.url }}"> -------- 继续阅读 --------></a></p>
             {% else %}
                 {{ post.content }}
             {% endif %}
