@@ -5,6 +5,6 @@ description: Just for fun
 permalink: /:year/:month/:day/:title/
 paginate: 10
 pygments: true
-img_url: http://orangeprince.info/assets/img/
+img_url: http://orangeprince.info/assets/img
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile', 'commit.sh']
