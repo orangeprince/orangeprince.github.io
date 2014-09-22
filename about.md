@@ -9,9 +9,13 @@ title : 关于
     
 <div style='text-align: right;'> --- 《紅樓夢》第三十七回：秋爽齋偶結海棠社，蘅蕪苑夜擬菊花題  </div>
 <br/>
-  
+
+<p/>**本博客内容，未经说明，均为本人原创，转载请注明来源**
+
+<br/>
 联系我
 ---
 <p/>   
-欢迎Email骚扰：<orangeprince88@gmail.com> 
+Email：<orangeprince88@gmail.com> 
+新浪微博：<http://weibo.com/fgxianren>
 <p/>   
