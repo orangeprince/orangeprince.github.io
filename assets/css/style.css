@@ -49,14 +49,14 @@ a:hover {
 p { margin-bottom: 15px; }
 ul, ol { padding: 0 0 18px 30px; }
 ol li, ul li { margin-top: 10px; margin-bottom: 10px; }
-em, i { font-style: italic; }
-strong, b { font-weight: bold; }
+em, i { font-style: italic; color:#2aa198}
+strong, b { font-weight: bold; color:#839496;}
 small { font-size: 0.85em; }
 sup { vertical-align: super; font-size: 0.9em; }
 sub { vertical-align: sub; font-size: 0.9em; }
 
 code {
-font-family:Monaco,Menlo,Consolas,"Courier New",monospace;font-size:14px;color:#2aa198;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;
+font-family:Monaco,Menlo,Consolas,"Courier New",monospace;font-size:16px;color:#2aa198;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;
 }
 
 blockquote {
