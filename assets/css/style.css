@@ -32,8 +32,8 @@ table {
 /*** Basics ***/
 body {
 	font-family: "Microsoft YaHei", Verdana, serif;
-	font-size: 15px;
-	line-height: 1.8;
+	font-size: 18px;
+	line-height: 2;
 }
 
 a, a:active, a:visited {
@@ -52,8 +52,8 @@ ol li, ul li { margin-top: 10px; margin-bottom: 10px; }
 em, i { font-style: italic; }
 strong, b { font-weight: bold; }
 small { font-size: 0.85em; }
-sup { vertical-align: super; font-size: 0.85em; }
-sub { vertical-align: sub; font-size: 0.85em; }
+sup { vertical-align: super; font-size: 0.9em; }
+sub { vertical-align: sub; font-size: 0.9em; }
 
 code {
 font-family:Monaco,Menlo,Consolas,"Courier New",monospace;font-size:14px;color:#2aa198;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;
@@ -76,15 +76,15 @@ acronym, abbr {
 
 
 h1 {
-	font-size: 21px;
+	font-size: 24px;
 	margin: 0 0 10px 0;
 }
 h2 {
-	font-size: 19px;
+	font-size: 22px;
 	margin: 0 0 10px 0;
 }
 h3 {
-	font-size: 16px;
+	font-size: 20px;
 	margin: 0 0 10px 0;
 }
 
@@ -108,14 +108,14 @@ h3 {
 
 /*** Structure ***/
 #page {
-	width: 700px;
+	width: 800px;
 	margin: 0 auto;
 	position: relative;
 }
 
 #header {
-	width: 700px;
-	margin: 40px auto 50px auto;
+	width: 800px;
+	margin: 40px auto 40px auto;
 }
 #header h1 {
 	font-size: 32px;
@@ -126,15 +126,15 @@ h3 {
 }
 
 #footer {
-	width: 700px;
-	margin: 50px auto 20px auto;
+	width: 800px;
+	margin: 40px auto 40px auto;
 	padding-top: 10px;
 	font-size: 0.85em;
 	border-top: 1px solid #073642;
 }
 
 #content {
-	width: 700px;
+	width: 800px;
 	margin: 0 auto;
 }
 
@@ -143,7 +143,7 @@ h3 {
 	text-align: right;
 	width: 160px;
 	top: 0;
-	left: -240px;
+	left: -280px;
 }
 
 #sidebar li {
@@ -166,7 +166,7 @@ article {
 }
 
 article h1 {
-	font-size: 22px;
+	font-size: 24px;
 	margin: 0 0 10px 0;
 }
 article h1 a {
@@ -184,7 +184,7 @@ article img {
 
 article .meta {
 	padding-top: 6px;
-	font-size: 0.85em;
+	font-size: 0.9em;
 	font-style: italic;
 }
 
