@@ -32,7 +32,7 @@ table {
 /*** Basics ***/
 body {
 	font-family: "Microsoft YaHei", Verdana, serif;
-	font-size: 18px;
+	font-size: 17px;
 	line-height: 2;
 }
 
@@ -60,7 +60,7 @@ font-family:Monaco,Menlo,Consolas,"Courier New",monospace;font-size:14px;color:#
 }
 
 blockquote {
-    margin: 22px 22px;
+    margin: 21px 21px;
     padding: 0 20px;
     border-left: 2px solid #000000;
     font-size: 1.2em;
@@ -76,15 +76,15 @@ acronym, abbr {
 
 
 h1 {
-	font-size: 24px;
+	font-size: 23px;
 	margin: 0 0 10px 0;
 }
 h2 {
-	font-size: 22px;
+	font-size: 21px;
 	margin: 0 0 10px 0;
 }
 h3 {
-	font-size: 20px;
+	font-size: 19px;
 	margin: 0 0 10px 0;
 }
 
@@ -143,7 +143,7 @@ h3 {
 	text-align: right;
 	width: 160px;
 	top: 0;
-	left: -280px;
+	left: -120px;
 }
 
 #sidebar li {
