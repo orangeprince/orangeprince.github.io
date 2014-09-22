@@ -46,7 +46,7 @@ a:hover {
 	color: #000000;
 }
 
-p { margin-bottom: 15px; font-size: 17px;}
+p { margin-bottom: 15px;}
 ul, ol { padding: 0 0 18px 30px; }
 ol li, ul li { margin-top: 10px; margin-bottom: 10px; }
 em, i { color:#2aa198}
@@ -63,7 +63,7 @@ blockquote {
     margin: 21px 21px;
     padding: 0 20px;
     border-left: 2px solid #000000;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-style: italic;
     line-height: 1.5em;
 }
