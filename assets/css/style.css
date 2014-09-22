@@ -76,14 +76,17 @@ acronym, abbr {
 
 
 h1 {
+    font-family: "STHeiti Light", "Microsoft YaHei", Verdana, serif;
 	font-size: 23px;
 	margin: 0 0 10px 0;
 }
 h2 {
+    font-family: "STHeiti Light", "Microsoft YaHei", Verdana, serif;
 	font-size: 21px;
 	margin: 0 0 10px 0;
 }
 h3 {
+    font-family: "STHeiti Light", "Microsoft YaHei", Verdana, serif;
 	font-size: 19px;
 	margin: 0 0 10px 0;
 }
@@ -118,6 +121,7 @@ h3 {
 	margin: 40px auto 40px auto;
 }
 #header h1 {
+    font-family: "STHeiti Light", "Microsoft YaHei", Verdana, serif;
 	font-size: 32px;
 	margin-bottom: 4px;
 }
