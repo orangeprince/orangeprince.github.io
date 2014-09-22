@@ -18,5 +18,4 @@ Email：<orangeprince88@gmail.com>
 新浪微博：<http://weibo.com/fgxianren>   
 <p/>
 
-**本博客内容，未经说明，均为本人原创，转载请注明来源**
 
