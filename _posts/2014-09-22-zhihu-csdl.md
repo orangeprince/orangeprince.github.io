@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "比较深度学习和压缩感知"
-category: "技术"
-tags: [机器学习,知乎,深度学习]
+category: "机器学习"
+tags: [知乎,深度学习]
 ---
 
 ###问题
