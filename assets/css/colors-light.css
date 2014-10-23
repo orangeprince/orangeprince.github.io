@@ -1,5 +1,5 @@
 html, body {
-	background-color:#B8B8DC;
+	/*background-color:#B8B8DC;*/
 	/*color: #839496;***/
 }
 
@@ -23,12 +23,12 @@ h1 a, h1 a:visited, h1 a:active {
 }
 
 h1 a:hover {
-	background-color: #eee8d5;
-	border-color: #eee8d5;
+	/*background-color: #eee8d5;
+	border-color: #eee8d5;*/
 }
 
 article h1 a.anchor {
-	color: #2aa198;
+	/*color: #2aa198;*/
 }
 
 blockquote {
