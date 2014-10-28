@@ -5,8 +5,10 @@ header : Software
 group: navigation
 ---
 {% include JB/setup %}
+
 #Software   
 * * *
+
 浙江大学计算机学院研究生论文Latex模板 
 ---
 针对浙江大学计算机学院的毕业论文格式制作的Latex模板，适用于硕士和博士毕业论文的撰写（和浙大其他学院模板有区别）。   
