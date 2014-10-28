@@ -118,7 +118,7 @@ JB :
   rss_path : /rss.xml
   about_path : /about.html
   search_path : /search.html
-
+  img_url: http://orangeprince.info/assets/img
   # Settings for comments helper
   # Set 'provider' to the comment provider you want to use.
   # Set 'provider' to false to turn commenting off globally.
