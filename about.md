@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: About
 header: About
 group: navigation
