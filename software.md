@@ -5,8 +5,6 @@ header : Software
 group: navigation
 ---
 
-* * * 
-
 浙江大学计算机学院研究生论文Latex模板 
 ---
 
