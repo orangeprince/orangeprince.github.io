@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: post
 title: About
 header: About
 group: navigation
