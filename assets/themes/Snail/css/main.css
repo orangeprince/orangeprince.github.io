@@ -334,19 +334,6 @@ nav #nav-c ul#nav-list li.active a:hover {
 nav #nav-c ul#nav-list li a:hover {
 	color:#000;
 }
-nav #nav-c ul#nav-list li#home {
-	vertical-align:middle;
-	padding:8px 14px 0 0;
-	top:0;
-	background:none;
-}
-nav #nav-c ul#nav-list li#home.active {
-	background:none;
-}
-nav #nav-c ul#nav-list li#home.active span {
-	opacity:0;
-	display:none;
-}
 
 nav #nav-c form#nav-search {
 	display:table-cell;
