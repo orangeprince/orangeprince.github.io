@@ -1,13 +1,9 @@
 ---
-layout: default
+layout: others
 title : Software
 header : Software
 group: navigation
 ---
-{% include JB/setup %}
-
-#Software   
-* * *
 
 浙江大学计算机学院研究生论文Latex模板 
 ---
