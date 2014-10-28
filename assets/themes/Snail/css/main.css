@@ -347,21 +347,6 @@ nav #nav-c ul#nav-list li#home.active span {
 	opacity:0;
 	display:none;
 }
-nav #nav-c ul#nav-list li#home a {
-	text-indent:-9999px;
-	width: 34px;
-	height:34px;
-	overflow:hidden;
-	display:block;
-	position:relative;
-	padding:0;
-	background-size: 100% 100%;
-	border-radius: 50%;  
-	/* box-shadow: 0 0 0px 1px black, 0 0 4px 4px #5C5C5C; */
-	border-style: solid;
-	border-color: rgb(0, 0, 0);
-	border-width: 1px;
-}
 
 nav #nav-c form#nav-search {
 	display:table-cell;
