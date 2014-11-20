@@ -111,23 +111,41 @@ $$</p>
 <p>除了libsvm外，<a href="http://svmlight.joachims.org/">svmlight</a>也是非常著名的svm工具包。除了提供基本的SVM算法外，svmlight支持struct SVM的扩展，这也是svmlight的一大优势。此外<a href="http://vikas.sindhwani.org/svmlin.html">svmlin</a>也是一个比较有特色的svm package，除了高效的线性svm实现外，svmlin对于半监督SVM有很好的支持，可以方便在标注数据较少时充分利用无标注数据进行模型的训练。</p>
 <p>最后，在我日常工作中最常用的工具包并不是libsvm而是<a href="http://www.csie.ntu.edu.tw/~cjlin/liblinear/">liblinear</a>。liblinear在处理线性SVM和Logistic Regression时有着更高的效率和与libsvm几乎同样的接口与可移植性。后面打算专门写文章来介绍liblinear的优化算法。而liblinear的使用方法和一些注意事项，在这个<a href="http://www.csie.ntu.edu.tw/~cjlin/liblinear/faq">FAQ</a>中已经有非常清楚的介绍，只要从头看到尾，基本上就能很好的使用liblinear。最近，liblinear还推出了分布式版本，分别支持MPI框架和Spark，详情可以参考此<a href="http://www.csie.ntu.edu.tw/~cjlin/libsvmtools/distributed-liblinear/">项目主页</a>。</p>
             
-            
-            <hr/>
-                          <!-- Duoshuo Comment BEGIN -->
-                              <div class="ds-thread"></div>
-                                  <script type="text/javascript">
-        var duoshuoQuery = {short_name:""};
-  (function() {
-      var ds = document.createElement('script');
-         ds.type = 'text/javascript';ds.async = true;
-            ds.src = 'http://static.duoshuo.com/embed.js';
-               ds.charset = 'UTF-8';
-                  (document.getElementsByTagName('head')[0]
-                       || document.getElementsByTagName('body')[0]).appendChild(ds);
-                     })();
-  </script>
-    <noscript>Please enable JavaScript to view the comments.</noscript>
+            <section>
+<div class="accordion" id="accordion2">
+    <div class="accordion-group">
+        <div class="accordion-heading">
+            <a class="accordion-toggle disqus-comment-count" data-toggle="collapse" data-parent="#accordion2"
+                href="http://orangeprince.info/libsvmyu-liblinear.html#disqus_thread">
+                Comments
+            </a>
         </div>
+        <div id="disqus_thread" class="accordion-body collapse">
+            <div class="accordion-inner">
+                <div class="comments">
+                    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'orangeprince';
+        var disqus_identifier = 'http://orangeprince.info/libsvmyu-liblinear.html';
+    var disqus_url = 'http://orangeprince.info/libsvmyu-liblinear.html';
+
+    (function() {
+         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+     })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+            <hr/>
         <section>
         <div class="span2" style="float:right;font-size:0.9em;">
             <h4>Published</h4>
@@ -173,7 +191,45 @@ $$</p>
             }
         </script>
 
-    
+            <script type="text/javascript">
+var disqus_shortname = 'orangeprince';
+(function () {
+    var s = document.createElement('script'); s.async = true;
+    s.type = 'text/javascript';
+    s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
+<script  language="javascript" type="text/javascript">
+function uncollapse() {
+    if (window.location.hash.match(/^#comment-\d+$/)) {
+        $('#disqus_thread').collapse('show');
+    }
+}
+</script>
+<script type="text/javascript" language="JavaScript">
+uncollapse();
+window.onhashchange=function(){
+    if (window.location.hash.match(/^#comment-\d+$/))
+        window.location.reload(true);
+}
+</script>
+<script>
+$('#disqus_thread').on('shown', function () {
+    var link = document.getElementsByClassName('accordion-toggle');
+    var old_innerHTML = link[0].innerHTML;
+    $(link[0]).fadeOut(500, function() {
+        $(this).text('Click here to hide comments').fadeIn(500);
+    });
+    $('#disqus_thread').on('hidden', function () {
+        $(link[0]).fadeOut(500, function() {
+            $(this).text(old_innerHTML).fadeIn(500);
+        });
+    })
+})
+</script>
+
+
     </body>
     <!-- Theme: Elegant built for Pelican
     License : http://oncrashreboot.com/pelican-elegant -->
