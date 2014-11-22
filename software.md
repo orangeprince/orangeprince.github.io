@@ -1,5 +1,5 @@
 ---
-layout: others
+layout: post
 title : Software
 header : Software
 group: navigation
