@@ -1,19 +1,14 @@
 title:            富贵闲人
-tagline:          A beautiful theme.
-description:      Describe your website.
+description:      orangeprince's blog.
 canonical: http://orangeprince.info
 # Owner/author information
 owner:
-  name:           Cole Townsend
+  name:           orangeprince
   avatar:         avatar.png
-  bio:            "Aesthete & Athlete"
-  email:          cole@coletownsend.com
-  twitter:        twnsndco
-  github:         coletownsend
-  instagram:      ctrunsthis
+  email:          orangeprince88@gmail.com
   dribbble:       coletownsend
   disqus:         orangeprince
-  location:       "Buffalo, NY"
+  location:       "Shenzhen, China"
   # Plug in your disqus shortname!
 
 tools:
@@ -27,8 +22,8 @@ links:
     url: /about
   - title: Software
     url: /software
-  - title: Cole Who?
-    url: http://coletownsend.com
+  - title: Contact me?
+    url: mailto:orangeprince88@gmail.com
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
