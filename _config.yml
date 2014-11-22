@@ -22,7 +22,8 @@ links:
     url: /about
   - title: Software
     url: /software
-
+  - title: CV
+    url: /cv-en
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/New_York
 future:      true
