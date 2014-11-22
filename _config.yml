@@ -2,10 +2,10 @@ title:            富贵闲人
 tagline:          A beautiful theme.
 description:      Describe your website.
 canonical: http://orangeprince.info
-comments: true
 # Owner/author information
 owner:
   name:           Cole Townsend
+  comments:       true
   avatar:         avatar.png
   bio:            "Aesthete & Athlete"
   email:          cole@coletownsend.com
