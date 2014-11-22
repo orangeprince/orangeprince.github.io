@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Curriculum vitae
+title: Curriculum Vitae
 header: About
 group: navigation
 ---
