@@ -1,7 +1,9 @@
-layout:  post-no-feature
+---
+layout: post-no-feature
 title: "说说LIBSVM与LIBLINEAR"
 category: "机器学习"
 tags: [开发工具,SVM]
+---
 
 在过去的十几年里，支持向量机（Support Vector Machines）应该算得上是机器学习领域影响力最大的算法了。而在SVM算法的各种实现工具中，由国立台湾大学林智仁老师开发的工具包libsvm，又无疑是影响力最大的。2011年libsvm的系统介绍论文“LIBSVM: a library for support vector machines”发表在了期刊ACM TIST(ACM Transactions on Intelligent Systems and Technology)上。2011年的时候，这个期刊的影响因子还不到1，但到了2014年，它的影响因子居然达到了9.39，把TPAMI都甩出了一大截。这其中贡献最大的当然是关于libsvm的这篇论文，在google scholar上，这篇文章的引用量居然已经接近20000，着实吓人。仔细想来其实也并不奇怪，各种研究工作，只要涉及到分类，大部分都会用到SVM算法或者与SVM的算法进行对比，而此时libsvm往往是首选工具。其实不但是学术界，在工业界libsvm也有非常广泛的应用。这一方面得益于算法实现的稳定与高效，另一方面也是因为libsvm提供了丰富的接口与灵活的使用方式。一些非常有名的机器学习工具，如基于java的Weka和基于python的scikit-learn，其提供的SVM算法在底层也是基于libsvm的实现。
 
