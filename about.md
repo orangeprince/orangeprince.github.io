@@ -1,26 +1,15 @@
 ---
 layout: post
-permalink: /about/index.html
-title: About the Theme
-description: Balzac is a new, fluid & responsive theme for Jekyll (and AnchorCMS). It's gloriously beautiful and suited to long form. Built on a SCSS foundation, it's organized and awesome.
-tags: [about, Jekyll, theme, responsive]
-image:
-  feature: soft-trees.jpg
+title: About
+header: About
+group: navigation
 ---
 
-This is built on Semantic.gs grid framework which I edited a bit to make it fluid. I hope you enjoy using, forking, whatevering this theme as much as I did making it. 
+关于本站
+---
+<p/>   
+>寶玉道：「我呢﹖你們也替我想一個。」寶釵笑道：「你的號早有了，『無事忙』三字恰當得很。」李紈道：「你還是你的舊號『絳洞花主』就好。」寶玉笑道：「小時候幹的營生，還提它作什麼。」探春道：「你的號多得很，又起什麼。我們愛叫你什麼，你就答應著就是了。」寶釵道：「還得我送你個號罷。有最俗的一個號，卻於你最當。天下難得的是富貴，又難得的是閑散，這兩樣再不能兼有，不想你兼有了，就叫你`『富貴閑人』`也罷了。」寶玉笑道：「當不起，當不起！倒是隨你們混叫去罷。」
+    
+--- 《紅樓夢》第三十七回：秋爽齋偶結海棠社，蘅蕪苑夜擬菊花題  
 
-### Features
-* flexible, uses max-width for responsive goodness
-* responsive drop down menu
-* retina images using @2x
-* post loop in the footer showing 3 latest post
-* custom portfolio page for case studies
-
-### Acknowledgements
-I utilized my own HTML templates, but had no prior knowledge of liquid nor the required Jekyll system file format. I took [Michael Rose](http://twitter.com/mmistakes)'s theme [Minimal Mistakes](http://mmistakes.github.io/minimal-mistakes/). Having a prebuilt archive and the YAML front-matter already set up was a great help. 
-
- The lovely font shown here is Calendas. For full splendor on your blog, I suggest you [head over and buy that](http://calendasplus.com/). The full family is 3 weights and costs $3. Many thanks to Daniel Bruce for the wonderful Entypo icons. Those can be picked up at [entypo.com](http://entypo.com), but are included with the source files. It's also <b>retina ready</b> via retina.js. Check out how that works over at [retinajs.com](http://retinajs.com).
-
-### The Name
-Balzac was a famous writer, known for his beautiful prose. I read some Balzac in school, but mostly feel comfort in the name of my favorite coffee shop in Stratford, Ontario. 
+**欢迎Email骚扰：<orangeprince88@gmail.com>** 
