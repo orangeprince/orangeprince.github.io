@@ -1,5 +1,5 @@
 ---
-layout: post-light-feature
+layout: page
 title: Curriculum vitae
 header: About
 group: navigation
