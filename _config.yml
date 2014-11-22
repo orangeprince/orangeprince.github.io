@@ -19,7 +19,7 @@ tools:
 # For external links add external: true
 links:
   - title: Articles
-  url: /articles
+    url: /articles
   - title: About
     url: /about
   - title: Software
