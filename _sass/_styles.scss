@@ -588,7 +588,7 @@ footer {
     .list-title {
         margin-bottom: $lh/2;
         border-bottom: 2px solid $link;
-        font-style: italic;
+        /*font-style: italic;*/
         font-size: $fs4;
     }
     .prev-posts {
@@ -604,7 +604,7 @@ footer {
             margin-top: $lh/2;
             .recent-title {
                 @include column(8,12);
-                font-style: italic;
+                /*font-style: italic;*/
                 a {
                     &:hover {
                         color: $white;
