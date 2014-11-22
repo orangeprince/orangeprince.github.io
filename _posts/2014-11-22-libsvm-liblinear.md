@@ -1,6 +1,6 @@
 ---
 layout: post-no-feature
-title: "说说LIBSVM与LIBLINEAR(一)"
+title: "说说LIBSVM与LIBLINEAR（一）"
 category: "机器学习"
 tags: [开发工具,SVM]
 ---
