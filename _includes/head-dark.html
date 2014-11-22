@@ -4,9 +4,10 @@
 <meta name="keywords" content="{{ page.tags | join: ', ' }}">
 
 <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}},
-  "HTML-CSS": {
-                  preferredFont: "STIX",scale: 100
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+    TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}}, 
+                "HTML-CSS": {linebreaks: {automatic: true}, matchFontHeight: false}, 
+                SVG: {linebreaks: {automatic: true}, matchFontHeight: false}
                                 })
 </script>
 <script type="text/javascript"
