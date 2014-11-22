@@ -1,5 +1,5 @@
 ---
-layout: post-light-feature
+layout: page
 title: About
 header: About
 group: navigation
