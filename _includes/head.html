@@ -1,6 +1,17 @@
 <!doctype html>
 <html lang="en">
 <meta charset="utf-8">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F014f36d2ec939b5228c6349bb80b7b2d' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
 <title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
 <meta name="description" content="{{ page.description }}">
 <meta name="keywords" content="{{ page.tags | join: ', ' }}">
@@ -42,20 +53,6 @@
 
 <!-- Load Modernizr -->
 <script src="{{ site.url }}/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script>
-    MathJax.Hub.Config({
-                                tex2jax: {
-                                                                            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
-                                                                                                                                                }
-                                                                                                                                                                                                                                            });
-    MathJax.Hub.Queue(function() {
-                                var all = MathJax.Hub.getAllJax(), i;
-                                                                    for(i=0; i < all.length; i += 1) {
-                                                                                                                                    all[i].SourceElement().parentNode.className += ' has-jax';
-                                                                                                                                                                                                                                }
-                                                                                                                                                                                                                                                                                                                                                        });
-        </script>
 <!-- Icons -->
 <!-- 16x16 -->
 <link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
