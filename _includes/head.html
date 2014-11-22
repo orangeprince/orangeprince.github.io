@@ -1,14 +1,15 @@
 <!doctype html>
 <html lang="en">
 <meta charset="utf-8">
-<script type="text/javascript">
 <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}},
+   TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}},
+   "HTML-CSS": {linebreaks: {automatic: true}, matchFontHeight: false},
+    SVG: {linebreaks: {automatic: true}, matchFontHeight: false});
 </script>
 <script type="text/javascript"
   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
-
 <title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
 <meta name="description" content="{{ page.description }}">
 <meta name="keywords" content="{{ page.tags | join: ', ' }}">
