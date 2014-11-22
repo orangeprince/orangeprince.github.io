@@ -1,5 +1,5 @@
 ---
-layout: post-no-feature
+layout: post-light-feature
 title : Software
 header : Software
 group: navigation
