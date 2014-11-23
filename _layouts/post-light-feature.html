@@ -24,8 +24,8 @@
         </header>
 
         {{ content }}
-
-        <p style="text-align: right;">{{page.date | date: "%b %d, %Y" }}</p>
+        <p style="text-align: right;">Posted on {{page.date | date: "%b %d, %Y" }}</p>
+                <p style="text-align: right;">Tags: {% for tag in page.tags %}<a href="{{ site.url }}/tags.html#{{ tag }}-ref" title="{{ tag }}">{{ tag }}</a>{% unless forloop.last %}&nbsp;&bull;&nbsp;{% endunless %}{% endfor %}</p>
     <!-- 多说评论框 start -->
 <div id="comments">
     <div class="ds-thread" {% if page.id %}data-thread-key="{{ page.id }}"{% endif %}  data-title="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}"></div>
