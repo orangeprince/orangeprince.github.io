@@ -366,7 +366,7 @@ header.site-header nav {
         @include push(2);
         display: block;
         float: none;
-        
+        text-indent: 0px; 
         lh h2 {
             margin-bottom: $lh*1.5;
         }
