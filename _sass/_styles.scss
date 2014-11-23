@@ -70,18 +70,17 @@ code {
     font-family: "Monaco", "Consolas",  "Courier New", "Courier";
     font-size: 1em;
     text-indent:0px;
+    width: 90%;
     /*font-weight: bold;*/
 }
 
 .highlight {
-    background: #003366;
+    background: #333333;
     padding: 12px;
     border-radius: 4px;
     margin-bottom: $lh;
     overflow-x: scroll;
     text-indent:0px;
-    width: 90%;
-    align: center;
     code {
         color: $white;
         font-family: "Monaco", "Courier New", "Courier";
