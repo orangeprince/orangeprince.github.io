@@ -1,6 +1,9 @@
 {% include head-dark.html %}
 
-<section class="article">
+
+<section class="article archive">
+<article class="archive-wrap">
+
   {% assign tags_list = site.tags %}
 {% if site.JB.tags_list.provider == "custom" %}
   {% include custom/tags_list %}
@@ -16,11 +19,6 @@
   {% endif %}
 {% endif %}
 {% assign tags_list = nil %}
-<section>
-
-<section class="article archive">
-<article class="archive-wrap">
-
 <ol class="post-list">
 {% for tag in site.tags %}
 <br><h2><id="{{ tag[0] }}-ref">{{ tag[0] }}</span></h2></br>
