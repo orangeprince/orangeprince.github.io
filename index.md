@@ -1,6 +1,6 @@
 ---
 layout: home
 permalink: /index.html
-title: "Articles"
+title: "HOME"
 tags: [Jekyll, theme, responsive, blog, template]
 ---
