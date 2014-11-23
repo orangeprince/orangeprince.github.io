@@ -33,7 +33,7 @@
       {% if group == null or group == node.group %}
         <li>
             <div class="deets" itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
-            <h1><a href="{{ node.url }}{{ node.url }}">{{ node.title }}</a></h1>
+            <h1><a href="{{ node.url }}">{{ node.title }}</a></h1>
             <p class="date"><time datetime="{{ node.date | date_to_xmlschema }}" itemprop="datePublished">{{ node.date | date: "%B %d, %Y" }}</time></p>
         </li>
       {% endif %}
