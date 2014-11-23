@@ -74,12 +74,13 @@ code {
 }
 
 .highlight {
-    background: $black;
+    background: #003366;
     padding: 12px;
     border-radius: 4px;
     margin-bottom: $lh;
     overflow-x: scroll;
     text-indent:0px;
+    width: 90%;
     code {
         color: $white;
         font-family: "Monaco", "Courier New", "Courier";
