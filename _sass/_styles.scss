@@ -621,6 +621,8 @@ footer {
                 }
             }
             span.date {
+
+                text-indent:0px;
                 float: none;
                 color: transparentize($grey-light, .4);
                 @include column(4,12);
