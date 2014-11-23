@@ -32,8 +32,7 @@
     {% if node.title != null %}
       {% if group == null or group == node.group %}
         <li>
-            <h4><a href="{{ node.url }}">{{ node.title }}</a></h4>
-            <p class="date"><time datetime="{{ node.date | date_to_xmlschema }}" itemprop="datePublished">{{ node.date | date: "%B %d, %Y" }}</time></p>
+            <a href="{{ node.url }}">{{ node.title }}</a>
         </li>
       {% endif %}
     {% endif %}
