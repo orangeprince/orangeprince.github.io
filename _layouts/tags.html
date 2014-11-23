@@ -22,10 +22,9 @@
 <section class="article archive">
 <article class="archive-wrap">
 {% for tag in site.tags %}
- <ol class="post-list">
-                 <lh><h2><span class="bb">{{ tag[0] }}</span></h2></lh>
-  
-    {% assign pages_list = tag[1] %}
+<ol class="post-list">
+<lh><h2><span class="bb">{{ tag[0] }}</span></h2></lh>
+{% assign pages_list = tag[1] %}
 {% if site.JB.pages_list.provider == "custom" %}
   {% include custom/pages_list %}
 {% else %}
@@ -34,10 +33,11 @@
       {% if group == null or group == node.group %}
         {% if page.url == node.url %}
         <li>
-<div class="deets" itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
-                        <h1><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h1>
-                        <p class="date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></p>
+            <div class="deets" itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+            <h1><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h1>
+            <p class="date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></p>
         </li>
+        {% endif %}
       {% endif %}
     {% endif %}
   {% endfor %}
