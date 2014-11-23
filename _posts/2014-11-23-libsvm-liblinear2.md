@@ -2,7 +2,7 @@
 layout: post-no-feature
 title: "LIBSVM与LIBLINEAR（二）"
 category: "机器学习"
-tags: [开发工具,SVM]
+tags:  [MachineLearning]
 ---
 
 ##输入与输出
