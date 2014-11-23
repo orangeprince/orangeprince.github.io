@@ -164,7 +164,8 @@ input {
 
 .post {
     @include column(8);
-    max-width: 680px;
+    /*max-width: 680px;*/
+    max-width: 720px;
     display: block;
     margin: 0 auto;
     float: none;
