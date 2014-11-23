@@ -23,7 +23,7 @@
 <article class="archive-wrap">
 {% for tag in site.tags %}
 <ol class="post-list">
-<lh><h2><span class="bb">{{ tag[0] }}</span></h2></lh>
+<lh><h3><span class="bb">{{ tag[0] }}</span></h3></lh>
 {% assign pages_list = tag[1] %}
 {% if site.JB.pages_list.provider == "custom" %}
   {% include custom/pages_list %}
@@ -33,7 +33,7 @@
       {% if group == null or group == node.group %}
         <li>
             <div class="deets" itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
-            <h1><a href="{{ node.url }}">{{ node.title }}</a></h1>
+            <h3><a href="{{ node.url }}">{{ node.title }}</a></h3>
             <p class="date"><time datetime="{{ node.date | date_to_xmlschema }}" itemprop="datePublished">{{ node.date | date: "%B %d, %Y" }}</time></p>
         </li>
       {% endif %}
