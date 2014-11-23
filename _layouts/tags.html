@@ -34,8 +34,8 @@
         {% if page.url == node.url %}
         <li>
             <div class="deets" itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
-            <h1><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h1>
-            <p class="date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></p>
+            <h1><a href="{{ node.url }}{{ node.url }}">{{ node.title }}</a></h1>
+            <p class="date"><time datetime="{{ node.date | date_to_xmlschema }}" itemprop="datePublished">{{ node.date | date: "%B %d, %Y" }}</time></p>
         </li>
         {% endif %}
       {% endif %}
