@@ -1,7 +1,6 @@
 {% include head-dark.html %}
 
-<div id='bump'>
-<ul class="tag_box inline">
+<section class="article">
   {% assign tags_list = site.tags %}
 {% if site.JB.tags_list.provider == "custom" %}
   {% include custom/tags_list %}
@@ -17,7 +16,7 @@
   {% endif %}
 {% endif %}
 {% assign tags_list = nil %}
-</ul>
+<section>
 
 <section class="article archive">
 <article class="archive-wrap">
