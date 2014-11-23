@@ -498,6 +498,7 @@ header.site-header nav {
     ul {
         display: block;
         margin-bottom: $lh;
+        text-indent:0px;
         list-style: disc;
         list-style-type: disc;
         lh h1, lh h2, lh h3, lh h4, lh h5 {
@@ -515,6 +516,8 @@ header.site-header nav {
     }
 
     ol {
+
+        text-indent:0px;
         display: block;
         margin-bottom: $lh;
         lh h1, lh h2, lh h3, lh h4, lh h5 {
