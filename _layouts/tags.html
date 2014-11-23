@@ -23,7 +23,7 @@
 <article class="archive-wrap">
 {% for tag in site.tags %}
 <ol class="post-list">
-<lh><h2><span class="bb">{{ tag[0] }}</span></h2></lh>
+<lh><h2><id="{{ tag[0] }}-ref">{{ tag[0] }}</span></h2></lh>
 {% assign pages_list = tag[1] %}
 {% if site.JB.pages_list.provider == "custom" %}
   {% include custom/pages_list %}
