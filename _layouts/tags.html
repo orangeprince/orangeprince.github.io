@@ -6,7 +6,7 @@
 <ol class="post-list">
 <lh><h2><span class="bb">{{ page.title }}</span></h2></lh>
 {% for tag in site.tags %}
-<br><h3><id="{{ tag[0] }}-ref">{{ tag[0] }}</span></h3></br>
+<br><h3><id="{{ tag[0] }}-ref">{{ tag[0] }}：</span></h3></br>
 {% assign pages_list = tag[1] %}
 {% if site.JB.pages_list.provider == "custom" %}
   {% include custom/pages_list %}
