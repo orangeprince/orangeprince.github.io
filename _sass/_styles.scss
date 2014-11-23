@@ -10,10 +10,8 @@ body {
   min-height: 100%;
   height: 100%;
   overflow-x: hidden;
-  text-align: justify; 
-  text-align: end; /* 对于除了IE之外的浏览器用尾对齐覆盖之前的两端对齐方式 */ 
-  text-align-last: justify; 
-  text-justify: distribute; 
+  text-align:justify;
+  text-justify:inter-ideograph;
 }
 
 h1,h2,h3,h4,h5 {
