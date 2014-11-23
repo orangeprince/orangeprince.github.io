@@ -1,5 +1,6 @@
 {% include head-dark.html %}
 
+<div id='bump'>
 <ul class="tag_box inline">
   {% assign tags_list = site.tags %}
 {% if site.JB.tags_list.provider == "custom" %}
@@ -18,10 +19,12 @@
 {% assign tags_list = nil %}
 </ul>
 
-
+<section class="article archive">
+<article class="archive-wrap">
 {% for tag in site.tags %}
-  <h2 id="{{ tag[0] }}-ref">{{ tag[0] }}</h2>
-  <ul>
+ <ol class="post-list">
+                 <lh><h2><span class="bb">{{ tag[0] }}</span></h2></lh>
+  
     {% assign pages_list = tag[1] %}
 {% if site.JB.pages_list.provider == "custom" %}
   {% include custom/pages_list %}
@@ -30,17 +33,20 @@
     {% if node.title != null %}
       {% if group == null or group == node.group %}
         {% if page.url == node.url %}
-        <li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.title}}</a></li>
-        {% else %}
-        <li><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
-        {% endif %}
+        <li>
+<div class="deets" itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+                        <h1><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h1>
+                        <p class="date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></p>
+        </li>
       {% endif %}
     {% endif %}
   {% endfor %}
 {% endif %}
 {% assign pages_list = nil %}
 {% assign group = nil %}
-</ul>
 {% endfor %}
-
+    </ol>
+    </article>
+</section>
+</div>
 {% include footer.html %}
