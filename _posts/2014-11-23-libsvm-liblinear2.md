@@ -17,6 +17,7 @@ LIBSVM和LIBLINEAR都提供了多种不同的模型供使用者选择，不同�
 	4 -- nu-SVR		(regression)
 {% endhighlight %}
 首先来看模型0，也就是最基础的C-SVC。我们知道，线性的SVM可以写成如下的优化目标函数：
+
 $$
 \begin{aligned}
 \underset{\mathbf{\alpha}}{\operatorname{argmin}} \quad & f(\mathbf{\alpha}) =
