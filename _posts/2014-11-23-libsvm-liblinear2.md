@@ -20,9 +20,9 @@ LIBSVM和LIBLINEAR都提供了多种不同的模型供使用者选择，不同�
 
 $$
 \begin{aligned}
-\underset{w, b, \ksi}{\operatorname{argmin}}  \quad &\frac{1}{1} \parallel w \parallel ^2 + C \sum_{i=1}^l \xi_i
-subject\,to \quad & y_i(w \cdot x_i - b) + \xi_i \leq 1
-& \xi_i \leq 0, i = 1, \ldot, m
+\underset{w, b, \xi}{\operatorname{argmin}}  \quad &\frac{1}{1} \parallel w \parallel ^2 + C \sum_{i=1}^l \xi_i \\\
+subject\,to \quad & y_i(w \cdot x_i - b) + \xi_i \leq 1 \\\
+& \xi_i \leq 0, i = 1, \ldot, m 
 \end{aligned}
 $$
 
