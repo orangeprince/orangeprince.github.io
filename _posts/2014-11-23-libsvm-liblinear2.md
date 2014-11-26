@@ -37,4 +37,5 @@ subject\,to \quad & 0 \le \alpha_i \le C, i= 1,\ldots,l, \\\
 \end{aligned}
 $$
 
+通过对偶变化，上面的目标函数变成了一个关于变量$\alpha$的二次型。很显然，上面目标函数中最重要的是矩阵$Q$，既训练样本的Kernel Matrix，满足$Q_{i.j}=\phi(x_i)^T\phi(x_j)$。
  
