@@ -22,7 +22,7 @@ $$
 \begin{aligned}
 \underset{w, b, \xi}{\operatorname{argmin}}  \quad &\frac{1}{1} \parallel w \parallel ^2 + C \sum_{i=1}^l \xi_i \\\
 subject\,to \quad & y_i(w \cdot x_i - b) + \xi_i \leq 1 \\\
-& \xi_i \leq 0, i = 1, \ldot, m 
+& \xi_i \leq 0, i = 1, \ldots, m 
 \end{aligned}
 $$
 
