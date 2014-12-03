@@ -21,7 +21,7 @@ LIBSVM和LIBLINEAR都提供了多种不同的模型供使用者选择，不同�
 
 $$
 \begin{aligned}
-\underset{w, b, \xi}{\operatorname{argmin}}  \quad &\frac{1}{1}  w^Tw  + C \sum_{i=1}^l \xi_i \\\
+\underset{w, b, \xi}{\operatorname{argmin}}  \quad &\frac{1}{2}  w^Tw  + C \sum_{i=1}^l \xi_i \\\
 subject\,to \quad & y_i(w ^T \phi(x_i)- b)  \geq 1 - \xi_i, \\\
 & \xi_i \leq 0, i = 1, \ldots, l
 \end{aligned}
@@ -60,5 +60,12 @@ One-Class SVM也是LIBSVM所支持的一种分类方法。顾名思义，使用O
 
 ###LIBLINEAR
 
-接下来讨论LIBLINEAR的求解方法。LIBLINEAR的出现较LIBSVM晚，但是解决的问题反倒更简单，那么LIBLINEAR也必然有其过人之处。
+接下来讨论LIBLINEAR的求解方法。LIBLINEAR的出现较LIBSVM晚，而解决的问题反倒更简单，那么LIBLINEAR又有着什么样的过人之处呢？
+
+对线性的SVM，目标函数可以写成如下的形式：
+$$
+\begin{aligned}
+\underset{w}{\operatorname{argmin}}  \quad \frac{1}{2}  w^Tw  + C \sum_{i=1}^l (max(0, 1-y_iw^Tx_i)) 
+$$
+
 	
