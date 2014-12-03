@@ -66,6 +66,7 @@ One-Class SVM也是LIBSVM所支持的一种分类方法。顾名思义，使用O
 $$
 \begin{aligned}
 \underset{w}{\operatorname{argmin}}  \quad \frac{1}{2}  w^Tw  + C \sum_{i=1}^l (max(0, 1-y_iw^Tx_i)) 
+\end{aligned}
 $$
 
 	
