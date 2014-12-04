@@ -7,10 +7,19 @@
   MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']], displayMath: [ ['$$','$$'], ["\\[","\\]"] ]},
     TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}}, 
                 "HTML-CSS": { 
-                    ".MathJax_Display": {font-size: 200},
                     linebreaks: {automatic: true}, matchFontHeight: true, availableFonts:["TeX"], jax: ["input/Tex", "output/HTML-SVG"]}, 
                 SVG: {linebreaks: {automatic: true}, matchFontHeight: false}
                                 })
+MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
+  var TEX = MathJax.InputJax.TeX;
+  var PREFILTER = TEX.prefilterMath;
+  TEX.Augment({
+    prefilterMath: function (math,displaymode,script) {
+      if (!displaymode) {math = "\\large{"+math+"}"}
+      return PREFILTER.call(TEX,math,displaymode,script);
+    }
+  });
+});
 </script>
 <script type="text/javascript"
   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
