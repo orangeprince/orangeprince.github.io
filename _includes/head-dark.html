@@ -15,7 +15,7 @@ MathJax.Hub.Register.StartupHook("TeX Jax Ready",function () {
   var PREFILTER = TEX.prefilterMath;
   TEX.Augment({
     prefilterMath: function (math,displaymode,script) {
-      if (!displaymode) {math = "\\large{"+math+"}"}
+      if (displaymode) {math = "\\large{"+math+"}"}
       return PREFILTER.call(TEX,math,displaymode,script);
     }
   });
