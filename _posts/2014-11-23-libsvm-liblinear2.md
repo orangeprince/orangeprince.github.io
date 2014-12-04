@@ -20,6 +20,7 @@ LIBSVM和LIBLINEAR都提供了多种不同的模型供使用者选择，不同�
 首先来看最基础的C-SVC模型。SVM可以写成如下的优化目标函数（这里不详细介绍推导算法了）：
 
 $$
+\large
 \begin{aligned}
 \underset{w, b, \xi}{\operatorname{argmin}}  \quad &\frac{1}{2}  w^Tw  + C \sum_{i=1}^l \xi_i \\\
 subject\,to \quad & y_i(w ^T \phi(x_i)- b)  \geq 1 - \xi_i, \\\
@@ -30,6 +31,7 @@ $$
 当模型使用linear kernel，也就是$\phi(x) = x$时，上面的问题一个标准的二次凸优化问题，可以比较方便的对每一个变量进行求导。求解这样的问题是有很多快速的优化方法的，这些方法在LIBLINEAR中都有应用。但是如果是引入kernel的SVM，情况就大不一样了。因为很多时候我们既不能得到核函数的具体形式，又无法得到特征在核空间中新的表达。这个时候，之前用在线性SVM上的的求解思路就完全不work了。为了解决这个问题，就必须采用标准的SVM求解思路，首先把原问题转化为对偶问题，得到下面的目标函数（具体过程可以参考任何介绍SVM的资料）：	
 
 $$
+\large
 \begin{aligned}
 \underset{\mathbf{\alpha}}{\operatorname{argmin}} \quad & f(\mathbf{\alpha}) =
 \frac{1}{2} \mathbf{\alpha}^T Q \mathbf{\alpha} - e^T \mathbf{\alpha} \\\
@@ -65,7 +67,10 @@ One-Class SVM也是LIBSVM所支持的一种分类方法。顾名思义，使用O
 对线性的SVM，目标函数可以写成如下的形式：
 	
 $$
+\large
+\begin{aligned}
 \underset{w}{\operatorname{argmin}}  \quad \frac{1}{2}  w^Tw  + C \sum_{i=1}^l (max(0, 1-y_iw^Tx_i)) 
+\end{aligned}
 $$
 
 	
