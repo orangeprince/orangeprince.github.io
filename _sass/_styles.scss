@@ -87,10 +87,10 @@ code {
         color: $black;
         font-family: "Monaco", "Consalas", "Courier New", "Courier";
         font-size: 1.0em;
+        line-height: 150%;
         .lineno {
             margin-right: $lh/2;
             color: $grey-light;
-            line-height: 150%;
         }
         .nt {
             color: #c85b5c;
