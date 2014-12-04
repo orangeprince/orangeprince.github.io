@@ -74,7 +74,6 @@ code {
 }
 
 .highlight {
-    background: #cccccc;
     padding: 12px;
     border-radius: 4px;
     margin-bottom: $lh;
@@ -87,6 +86,8 @@ code {
     text-indent:12px;
     code {
         color: $black;
+
+        background: #f7f7f7;
         font-family: "Monaco", "Consalas", "Courier New", "Courier";
         font-size: 1.0em;
         .lineno {
