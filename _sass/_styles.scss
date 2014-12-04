@@ -68,13 +68,13 @@ blockquote, blockquote p {
 code {
     color: $accent;
     font-family: "Monaco", "Consolas",  "Courier New", "Courier";
-    font-size: 1.1em;
+    font-size: 1.0em;
     text-indent:0px;
     /*font-weight: bold;*/
 }
 
 .highlight {
-    background: #d9d9d9;
+    background: #CCFFFF;
     padding: 12px;
     border-radius: 4px;
     margin-bottom: $lh;
@@ -86,7 +86,7 @@ code {
     code {
         color: $black;
         font-family: "Monaco", "Consalas", "Courier New", "Courier";
-        font-size: 1.1em;
+        font-size: 1.0em;
         .lineno {
             margin-right: $lh/2;
             color: $grey-light;
