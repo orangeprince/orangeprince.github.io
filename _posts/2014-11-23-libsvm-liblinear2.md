@@ -62,9 +62,7 @@ One-Class SVM也是LIBSVM所支持的一种分类方法。顾名思义，使用O
 
 ###LIBLINEAR
 
-接下来讨论LIBLINEAR的求解方法。LIBLINEAR的出现较LIBSVM晚，而解决的问题反倒更简单，那么LIBLINEAR又有着什么样的过人之处呢？
-
-对线性的SVM，目标函数可以写成如下的形式：
+LIBLINEAR是在LIBSVM流行多年后才开发的，要解决的问题本质上也比LIBSVM更简单，其优势主要在于效率与scalablility。要了解LIBLINEAR的实现机制，可以先从线性分类问题的 formulation看起，以线性SVM为例，目标函数可以写成下面的形式：
 	
 $$
 \large
@@ -72,5 +70,38 @@ $$
 \underset{w}{\operatorname{argmin}}  \quad \frac{1}{2}  w^Tw  + C \sum_{i=1}^l (max(0, 1-y_iw^Tx_i)) 
 \end{aligned}
 $$
+
+再进一步对问题进行抽象，可以把问题写成下面的形式：
+
+$$
+\large
+\begin{aligned}
+\underset{w}{\operatorname{argmin}}  \quad  \Omega(W)  + C \sum_{i=1}^l \ell(y_i, w^Tx_i)
+\end{aligned}
+$$
+
+其中的$\ell$一般称作error function，用来度量预测值与目标值的损失，比如在线性SVM中，有
+
+$$
+\large
+\begin{aligned}
+\ell(y_i, w^Tx_i) = max(0, 1-y_iw^Tx_i)
+\end{aligned}
+$$
+
+这里的$\ell$成为Hinge Loss。
+
+又如在Logistic Regression中，error function $\ell$被定义为
+
+$$
+\large
+\begin{aligned}
+\ell(y_i, w^Tx_i) = log(1+e^(-y_iw_i^Tx_i))
+\end{aligned}
+$$。
+
+
+
+
 
 	
