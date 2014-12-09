@@ -79,7 +79,8 @@ $$
 \underset{w}{\operatorname{argmin}}  \quad  \Omega(w)  + C \sum_{i=1}^l \ell(y_i, w^Tx_i)
 \end{aligned}
 $$
-其中的$\ell$一般称作error function，用来度量预测值与目标值的损失，比如在线性SVM中，有
+
+其中的$\ell$一般称作error function，用来度量预测值与目标值的损失，比如在上面的线性SVM中，有
 
 $$
 \large
@@ -87,6 +88,7 @@ $$
 \ell(y_i, w^Tx_i) = max(0, 1-y_iw^Tx_i)
 \end{aligned}
 $$
+
 这里的$\ell$成为Hinge Loss。
 
 又如在Logistic Regression中，error function $\ell$被定义为
@@ -94,10 +96,11 @@ $$
 $$
 \large
 \begin{aligned}
-\ell(y_i, w^Tx_i) = log(1+e^(-y_iw_i^Tx_i))
+\ell(y_i, w^Tx_i) = log(1+e^{-y_iw_i^Tx_i})
 \end{aligned}
 $$
 
+$\Omega$一般被称为正则化项(Regularizer)，最常使用的就是前面出现的$\ell_2$-norm，写作$w^Tw$，也可以写作$\parallel w \parallel_2^2$，即向量$w$中所有元素的平方和。除$\ell_2$-norm之外，$\ell_1$-norm也是经常使用regularizer，而且会带来一些特别的效果（后面会进行讨论）。大量的监督学习模型都可以写成error function + regularizer的形式，而参数C则控制了两者在最终损失函数中所占的比重。不同error function与regularizer的选取以及两者之间的平衡，几乎机器学习
 
 
 
