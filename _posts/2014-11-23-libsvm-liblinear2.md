@@ -76,10 +76,9 @@ $$
 $$
 \large
 \begin{aligned}
-\underset{w}{\operatorname{argmin}}  \quad  \Omega(W)  + C \sum_{i=1}^l \ell(y_i, w^Tx_i)
+\underset{w}{\operatorname{argmin}}  \quad  \Omega(w)  + C \sum_{i=1}^l \ell(y_i, w^Tx_i)
 \end{aligned}
 $$
-
 其中的$\ell$一般称作error function，用来度量预测值与目标值的损失，比如在线性SVM中，有
 
 $$
@@ -88,7 +87,6 @@ $$
 \ell(y_i, w^Tx_i) = max(0, 1-y_iw^Tx_i)
 \end{aligned}
 $$
-
 这里的$\ell$成为Hinge Loss。
 
 又如在Logistic Regression中，error function $\ell$被定义为
@@ -98,7 +96,8 @@ $$
 \begin{aligned}
 \ell(y_i, w^Tx_i) = log(1+e^(-y_iw_i^Tx_i))
 \end{aligned}
-$$。
+$$
+
 
 
 
