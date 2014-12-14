@@ -28,14 +28,14 @@ subject\,to \quad & y_i(w ^T \phi(x_i)- b)  \geq 1 - \xi_i, \\\
 \end{aligned}
 $$
 
-当模型使用linear kernel，也就是$\phi(x) = x$时，上面的问题一个标准的二次凸优化问题，可以比较方便的对每一个变量进行求导。求解这样的问题是有很多快速的优化方法的，这些方法在LIBLINEAR中都有应用。但是如果是引入kernel的SVM，情况就大不一样了。因为很多时候我们既不能得到核函数的具体形式，又无法得到特征在核空间中新的表达。这个时候，之前用在线性SVM上的的求解思路就完全不work了。为了解决这个问题，就必须采用标准的SVM求解思路，首先把原问题转化为对偶问题，得到下面的目标函数（具体过程可以参考任何介绍SVM的资料）：	
+当模型使用linear kernel，也就是$\phi(x) = x$时，上面的问题一个标准的二次凸优化问题，可以比较方便的对每一个变量进行求导。求解这样的问题是有很多快速的优化方法的，这些方法在LIBLINEAR中都有应用。但是如果是引入kernel的SVM，情况就大不一样了。因为很多时候我们既不能得到核函数的具体形式，又无法得到特征在核空间中新的表达。这个时候，之前用在线性SVM上的的求解思路就完全不work了。为了解决这个问题，就必须采用标准的SVM求解思路，首先把原问题转化为对偶问题，得到下面的目标函数（具体过程可以参考任何介绍SVM的资料）：
 
 $$
 \large
 \begin{aligned}
 \underset{\mathbf{\alpha}}{\operatorname{argmin}} \quad & f(\mathbf{\alpha}) =
 \frac{1}{2} \mathbf{\alpha}^T Q \mathbf{\alpha} - e^T \mathbf{\alpha} \\\
-subject\,to \quad & 0 \le \alpha_i \le C, i= 1,\ldots,l, \\\
+subject\,to \quad & 0 \ge \alpha_i \le C, i= 1,\ldots,l, \\\
 & \mathbf{y}^T \mathbf{\alpha}= 0
 \end{aligned}
 $$
@@ -62,7 +62,20 @@ One-Class SVM也是LIBSVM所支持的一种分类方法。顾名思义，使用O
 
 ###LIBLINEAR
 
-LIBLINEAR是在LIBSVM流行多年后才开发的，要解决的问题本质上也比LIBSVM更简单，其优势主要在于效率与scalablility。要了解LIBLINEAR的实现机制，可以先从线性分类问题的 formulation看起，以线性SVM为例，目标函数可以写成下面的形式：
+LIBLINEAR是在LIBSVM流行多年后才开发的，要解决的问题本质上也比LIBSVM更简单，其优势主要在于效率与scalablility。之所以存在这样的优势，是因为线性SVM的求解要比kernel SVM简单许多。
+
+还从上面的对偶问题说起，之前SVM的求解很大程度上受到$ \mathbf{y}^T \mathbf{\alpha}= 0$的困扰，因此每次必须选择一组 $\alpha$进行优化。如果对这一约束项追根述源，可以发现这一项是通过令模型的常数项$b$导数为$0$而得到的。而在线性模型中，我们可以通过一个简单地trick，令$x = [x, 1]$和$w = [w, b]$，这样，在模型中的常数项就不存在了。当然，这样的trick只能在线性模型中才适用。没有了上面的约束，优化的目标函数变成了：
+
+$$
+\large
+\begin{aligned}
+\underset{\mathbf{\alpha}}{\operatorname{argmin}} \quad & f(\mathbf{\alpha}) =
+\frac{1}{2} \mathbf{\alpha}^T Q \mathbf{\alpha} - e^T \mathbf{\alpha} \\\
+subject\,to \quad & 0 \ge \alpha_i \le C, i= 1,\ldots,l
+\end{aligned}
+$$
+
+要了解LIBLINEAR的实现机制，可以先从线性分类问题的 formulation看起，以线性SVM为例，目标函数可以写成下面的形式：
 	
 $$
 \large
@@ -104,6 +117,8 @@ $\Omega$一般被称为正则化项(Regularizer)，最常使用的就是前面�
 	
 回到本文的主题，所有的线性模型优化目标都可以看成是求解$w$使得目标损失函数最小。由于没有核函数的羁绊，只要选择可微$f$和$\Omega$函数，那么整个目标函数也是可微的。之前求解SVM对偶问题的目标函数中最大的问题是存在一个大而稠密的矩阵$Q$，其元素个数是训练样本的平方。而在线性问题目标函数中，当样本特征的维数较低时，数据量较之SVM对偶问题可以大大减少。对于高维数据的情况，如果特征比较稀疏（如文本分类），也可以通过一定的策略大大减少内存的消耗，这也就为线性模型的大规模样本
 训练提供了可能。
+
+
 
 
 
