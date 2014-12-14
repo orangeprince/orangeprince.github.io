@@ -35,7 +35,7 @@ $$
 \begin{aligned}
 \underset{\mathbf{\alpha}}{\operatorname{argmin}} \quad & f(\mathbf{\alpha}) =
 \frac{1}{2} \mathbf{\alpha}^T Q \mathbf{\alpha} - e^T \mathbf{\alpha} \\\
-subject\,to \quad & 0 \ge \alpha_i \le C, i= 1,\ldots,l, \\\
+subject\,to \quad & 0 \le \alpha_i \le C, i= 1,\ldots,l, \\\
 & \mathbf{y}^T \mathbf{\alpha}= 0
 \end{aligned}
 $$
@@ -71,9 +71,11 @@ $$
 \begin{aligned}
 \underset{\mathbf{\alpha}}{\operatorname{argmin}} \quad & f(\mathbf{\alpha}) =
 \frac{1}{2} \mathbf{\alpha}^T Q \mathbf{\alpha} - e^T \mathbf{\alpha} \\\
-subject\,to \quad & 0 \ge \alpha_i \le C, i= 1,\ldots,l
+subject\,to \quad & 0 \le \alpha_i \le C, i= 1,\ldots,l
 \end{aligned}
 $$
+
+这个时候，就可以每次只选择一个$\alpha_i$进行优化，每一轮便利$\alpha$的所有维度，多轮迭代，直至最后收敛。这样的优化算法叫做coordinate descent（坐标下降）。此外，利用线性函数的特殊性，可以直接根据$\alpha$计算出$w$的向量表示，还可以大大优化算法的计算。具体的优化算法可以参考文献 [A Dual Coordinate Descent Method for Large-scale Linear SVM](www.csie.ntu.edu.tw/~cjlin/papers/cddual.pdf)。
 
 要了解LIBLINEAR的实现机制，可以先从线性分类问题的 formulation看起，以线性SVM为例，目标函数可以写成下面的形式：
 	
