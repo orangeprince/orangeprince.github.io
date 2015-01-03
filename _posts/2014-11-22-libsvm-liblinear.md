@@ -1,7 +1,7 @@
 ---
 layout: post-no-feature
 title: "LIBSVM与LIBLINEAR（一）"
-category: "机器学习"
+category: tech
 tags: [MachineLearning]
 ---
 

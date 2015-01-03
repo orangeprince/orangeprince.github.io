@@ -75,9 +75,9 @@ subject\,to \quad & 0 \le \alpha_i \le C, i= 1,\ldots,l
 \end{aligned}
 $$
 
-这个时候，就可以每次只选择一个$\alpha_i$进行优化，每一轮便利$\alpha$的所有维度，多轮迭代，直至最后收敛。这样的优化算法叫做coordinate descent（坐标下降）。此外，利用线性函数的特殊性，可以直接根据$\alpha$计算出$w$的向量表示，还可以大大优化算法的计算。具体的优化算法可以参考文献 [A Dual Coordinate Descent Method for Large-scale Linear SVM](www.csie.ntu.edu.tw/~cjlin/papers/cddual.pdf)。
+这个时候，就可以每次只选择一个$\alpha_i$进行优化，每一轮遍历$\alpha$的所有维度，多轮迭代，直至最后收敛。这样的优化算法叫做coordinate descent（坐标下降法）。此外，利用线性函数的特殊性，可以直接根据$\alpha$计算出$w$的向量表示，还可以大大优化算法的计算。具体的优化算法可以参考文献 [A Dual Coordinate Descent Method for Large-scale Linear SVM](www.csie.ntu.edu.tw/~cjlin/papers/cddual.pdf)。
 
-要了解LIBLINEAR的实现机制，可以先从线性分类问题的 formulation看起，以线性SVM为例，目标函数可以写成下面的形式：
+与此同时，我们还可以从另外一个角度来看待线性的模型。以线性SVM的目标函数可以写成下面的形式：
 	
 $$
 \large
@@ -106,6 +106,8 @@ $$
 
 这里的$\ell$成为Hinge Loss。
 
+
+
 又如在Logistic Regression中，error function $\ell$被定义为
 
 $$
@@ -114,6 +116,9 @@ $$
 \ell(y_i, w^Tx_i) = log(1+e^{-y_iw_i^Tx_i})
 \end{aligned}
 $$
+
+
+
 
 $\Omega$一般被称为正则化项(Regularizer)，最常使用的就是前面出现的$\ell_2$-norm，写作$w^Tw$，也可以写作$\parallel w \parallel_2^2$，即向量$w$中所有元素的平方和。除$\ell_2$-norm之外，$\ell_1$-norm也是经常使用regularizer，而且会带来一些特别的效果（后面会进行讨论）。大量的监督学习模型都可以写成error function + regularizer的形式，而参数C则控制了两者在最终损失函数中所占的比重。不同error function与regularizer的选取以及两者之间的平衡，几乎就是机器学习最基本的问题。
 	
