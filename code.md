@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: home
 title : Software
 header : Software
 group: navigation
