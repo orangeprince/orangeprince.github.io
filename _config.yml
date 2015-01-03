@@ -20,8 +20,8 @@ tools:
 links:
   - title: Essay
     url: /essay
-  - title: Software
-    url: /software
+  - title: Code
+    url: /code
   - title: About
     url: /about
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
