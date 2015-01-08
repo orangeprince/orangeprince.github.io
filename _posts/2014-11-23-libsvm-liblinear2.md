@@ -119,11 +119,14 @@ $\Omega$一般被称为正则化项(Regularizer)，最常使用的就是前面�
 对于上面的问题，有很多成熟的算法可以进行模型的求解，比如最速梯度法，牛顿法等，对于样本量较大时，也可以采用随机梯度的方法进行训练。	一般来说，由于考虑了二阶导数，牛顿法本身的优化效率要高于只考虑一阶导数的最速梯度法。但由于牛顿法本身在计算量和收敛性上存在很多局限性，所以很少直接使用，而是在牛顿法思想基础上进行一定的改进。其中普遍使用的算法有BFGS和L-BFGS等。具体到liblinear软件包，作者采用的是Trust Region Newton (TRON) method对模型对传统牛顿法进行了改进，该方法被证明比L-BFGS训练更加高效。
 
 LIB LINEAR中实现了基于TRON方法的L-2 SVM和Logistical Regression模型训练。其中的L2-loss SVM是标准SVM的变种，loss function变成了：
+
 $$
+\large
 \begin{aligned}
 \ell(y_i, w^Tx_i) = \left max(0, 1-y_iw^Tx_i) \right ^2
 \end{aligned}
 $$。
+
 从实际效果来说，L2-loss SVM与标准的L1-loss SVM并没有根本的区别。但是在计算上，前者的求导形式更加简单，便于梯度的计算与优化。LIBLINEAR并没有实现Trust Region Newton法的标准L1-loss SVM实现，一方面是因为直接对hinge loss求导需要分段讨论比较复杂，另一方面L2-loss SVM基本可以直接替代L1-loss SVM。不过在其他的一些软件包中，如[svmlin](http://vikas.sindhwani.org/svmlin.html)中，则实现了L1-loss SVM的原问题求解，但使用的优化算法是L-BGFS而不是TRON。
 
 ### 总结
