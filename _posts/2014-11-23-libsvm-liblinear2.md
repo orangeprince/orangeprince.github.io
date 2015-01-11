@@ -136,7 +136,7 @@ $$
 * LIBLINEAR的优化算法主要分为两大类，即求解原问题(primal problem)和对偶问题(dual problem)。求解原问题使用的是TRON的优化算法，对偶问题使用的是Coordinate Descent优化算法。总的来说，两个算法的优化效率都较高，但还是有各自更加擅长的场景。对于样本量不大，但是维度特别高的场景，如文本分类，更适合对偶问题求解，因为由于样本量小，计算出来的Kernel Matrix也不大，后面的优化也比较方便。而如果求解原问题，则求导的过程中要频繁对高维的特征矩阵进行计算，如果特征比较稀疏的话，那么就会多做很多无意义的计算，影响优化的效率。相反，当样本数非常多，而特征维度不高时，如果采用求解对偶问题，则由于Kernel Matrix过大，求解并不方便。反倒是求解原问题更加容易。
 
 ##多分类问题
-LIBSVM和LIBLINEAR都支持多分类（Multi-class classification）问题。
+LIBSVM和LIBLINEAR都支持多分类（Multi-class classification）问题，但实现方式却完全不同。LIBSV
 
 
 	
