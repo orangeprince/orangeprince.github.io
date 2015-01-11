@@ -122,11 +122,11 @@ LIB LINEAR中实现了基于TRON方法的L-2 SVM和Logistical Regression模型�
 $$
 \large
 \begin{aligned}
-\ell(y_i, w^Tx_i) = \left( max(0, 1-y_iw^Tx_i) \right) ^2
+\ell(y_i, w^Tx_i) = \left( max(0, 1-y_iw^Tx_i) \right) 	^2
 \end{aligned}
 $$
 
-从实际效果来说，L2-loss SVM与标准的L1-loss SVM并没有根本的区别。但是在计算上，前者的求导形式更加简单，便于梯度的计算与优化。LIBLINEAR并没有实现Trust Region Newton法的标准L1-loss SVM实现，一方面是因为直接对hinge loss求导需要分段讨论比较复杂，另一方面L2-loss SVM基本可以直接替代L1-loss SVM。不过在其他的一些软件包中，如[SVMLIN](http://vikas.sindhwani.org/svmlin.html)中，则实现了L1-loss SVM的原问题求解，但使用的优化算法是L-BGFS而不是TRON。
+从实际效果来说，L2-loss SVM与标准的L1-loss SVM并没有太大的区别。但是在计算上，前者的求导形式更加简单，便于梯度的计算与优化。LIBLINEAR并没有实现Trust Region Newton法的标准L1-loss SVM实现，一方面是因为直接对hinge loss求导需要分段讨论比较复杂，另一方面L2-loss SVM基本可以直接替代L1-loss SVM。不过在其他的一些软件包中，如[SVMLIN](http://vikas.sindhwani.org/svmlin.html)中，则实现了L1-loss SVM的原问题求解，但使用的优化算法是L-BGFS而不是TRON。
 
 ### 总结
 前面介绍了LIBSVM和LIBLINEAR的优化算法，下面简单总结一下不同算法的应用场景吧：
@@ -136,6 +136,7 @@ $$
 * LIBLINEAR的优化算法主要分为两大类，即求解原问题(primal problem)和对偶问题(dual problem)。求解原问题使用的是TRON的优化算法，对偶问题使用的是Coordinate Descent优化算法。总的来说，两个算法的优化效率都较高，但还是有各自更加擅长的场景。对于样本量不大，但是维度特别高的场景，如文本分类，更适合对偶问题求解，因为由于样本量小，计算出来的Kernel Matrix也不大，后面的优化也比较方便。而如果求解原问题，则求导的过程中要频繁对高维的特征矩阵进行计算，如果特征比较稀疏的话，那么就会多做很多无意义的计算，影响优化的效率。相反，当样本数非常多，而特征维度不高时，如果采用求解对偶问题，则由于Kernel Matrix过大，求解并不方便。反倒是求解原问题更加容易。
 
 ##多分类问题
+LIBSVM和LIBLINEAR都支持多分类（Multi-class classification）问题。
 
 
 	
