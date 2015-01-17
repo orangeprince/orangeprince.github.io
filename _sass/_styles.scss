@@ -68,12 +68,16 @@ blockquote, blockquote p {
     font-size: $fs5;
     background: rgba(0,178,179,0.16667);
     padding: 12px;
+    border-width: 1px 1px 1px 5px;
+    border-style: solid;
+    border-color: rgba(0,178,179,0.33333);
     border-radius: 4px;
+    box-shadow: 0 0 3px rgba(0,178,179,0.16667);
     margin-bottom: $lh;
     overflow-x: scroll;
     margin-left:auto;  
     margin-right:auto;  
-    width: 92%;
+    width: 98%;
     line-height:120%;
     text-indent:0px;
     code {
