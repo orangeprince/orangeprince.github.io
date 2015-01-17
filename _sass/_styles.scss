@@ -63,8 +63,9 @@ blockquote, blockquote p {
 }
 
 
-/*
+
 .highlight {
+    background: $hilite;
     padding: 12px;
     border-radius: 4px;
     margin-bottom: $lh;
@@ -92,7 +93,7 @@ blockquote, blockquote p {
             color: #87ceeb;
         }
     }
-}*/
+}
 
 
 
