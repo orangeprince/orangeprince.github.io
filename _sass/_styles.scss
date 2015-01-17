@@ -66,7 +66,7 @@ blockquote, blockquote p {
 /*   Code Formatting    */
 
 code {
-    color: $black;
+    color: $hilite;
     font-family: "Courier New", "Courier";
     font-size: 1.0em;
     text-indent:0px;
@@ -94,7 +94,7 @@ code {
     line-height:120%;
     text-indent:0px;
     code {
-        color: $black;
+        color: $hilite;
         font-family: "Courier New", "Courier";
         font-size: 1.0em;
         .lineno {
