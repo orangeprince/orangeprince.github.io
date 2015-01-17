@@ -10,6 +10,7 @@ LIBSVM和LIBLINEAR工具包都包含很多需要调节的参数，参数的调�
 
 ###参数C$
 参数$C$是在LIBLINEAR和LIBSVM的求解中都要用到的一个参数。前面说到的各种模型，可以写成统一的形式：
+
 $$
 \large
 \begin{aligned}
