@@ -721,6 +721,10 @@ footer {
 /* Mobile ========================================================================== */
 
 @media only screen and (max-width: 500px) {
+
+ body {
+     text-indent: 0px
+ }
     footer {
     
     .social {
@@ -747,7 +751,10 @@ footer {
 }
 
 @media only screen and (max-width : 680px) {
- 
+    
+ body {
+     text-indent: 0px
+ }
       
   section.article img.loading {
     top: 10px !important;
@@ -815,6 +822,7 @@ footer {
     margin-left: 0;
     top: 0px;
     font-size: $fs5;
+
 }
   
   header.site-header nav ul li a {
@@ -856,7 +864,9 @@ footer {
 
 
 @media only screen and (max-width: $breakpoint-1-max-width) {
-
+body{
+    text-indent:0px;
+}
 .post {
     @include column(9);
     max-width: 420px;
