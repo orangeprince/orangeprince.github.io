@@ -3,23 +3,6 @@
 <meta name="description" content="{{ page.description }}">
 <meta name="keywords" content="{{ page.tags | join: ', ' }}">
 
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']], displayMath: [ ['$$','$$'], ["\\[","\\]"] ]},
-    TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}}, 
-                "HTML-CSS": { 
-                    linebreaks: {automatic: true}, matchFontHeight: true, availableFonts:["TeX"], jax: ["input/Tex", "output/HTML-SVG"]}, 
-                SVG: {linebreaks: {automatic: true}, matchFontHeight: false}
-                                })
-</script>
-<script type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-  $(function() {
-            $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto');
-            });
-</script>
-<link href="/assets/css/desert.css" rel="stylesheet" type="text/css" media="all">
-<link href="/assets/css/light.css" rel="stylesheet" type="text/css" media="all">
-<script type="text/javascript" src="/assets/js/prettify.js"></script>
 
 <meta property="og:locale" content="en_US">
 <meta property="og:title" content="{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}">
@@ -28,6 +11,7 @@
 <meta property="og:site_name" content="{{ site.title }}">
 
 
+<link href="/assets/css/light.css" rel="stylesheet" type="text/css" media="all">
 <link href="{{ site.url }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
 
 <!-- http://t.co/dKP3o1e -->
@@ -54,6 +38,21 @@
 <script src="//ajax.useso.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
 <meta http-equiv="cleartype" content="on">
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']], displayMath: [ ['$$','$$'], ["\\[","\\]"] ]},
+TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}}, 
+"HTML-CSS": { 
+    linebreaks: {automatic: true}, matchFontHeight: true, availableFonts:["TeX"], jax: ["input/Tex", "output/HTML-SVG"]}, 
+    SVG: {linebreaks: {automatic: true}, matchFontHeight: false}
+})
+$(function() {
+    $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto');
+});
+</script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/javascript" src="/assets/js/prettify.js"></script>
 
 <!-- Load Modernizr -->
 <script src="{{ site.url }}/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
