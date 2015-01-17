@@ -10,12 +10,15 @@ LIBSVM和LIBLINEAR都提供了多种不同的模型供使用者选择，不同�
 
 ###libsvm
 下面是LIBSVM帮助内容提供的介绍，给出了LIBSVM支持的5种模型。其中模型0和1对应的都是SVM的分类模型，2对应的是one-class分类器，也就是只需要标注一个标签，模型3和4对应的是SVM的回归模型。
+{% highlight bash linenos%}
 -s svm_type : set type of SVM (default 0)
 	0 -- C-SVC		(multi-class classification)
 	1 -- nu-SVC		(multi-class classification)
 	2 -- one-class SVM
 	3 -- epsilon-SVR	(regression)
 	4 -- nu-SVR		(regression)
+{% endhighlight bash linenos%}
+
 首先来看最基础的C-SVC模型。SVM可以写成如下的优化目标函数（这里不详细介绍推导算法了）：
 
 $$
@@ -161,12 +164,7 @@ w
 -0.1505088594898125 0.2709227166451816 -0.1929294695905781
 2.14656708009991 -0.007495770268046003 -0.1880325536062815
 {% endhighlight%}
-{% highlight scala linenos %}
-object Test{
-	def main(){
-	}
-}
-{% endhighlight%}
+
 上面的<fc>solver_type</fc>表示求解类型
 
 	
