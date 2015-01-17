@@ -148,7 +148,7 @@ LIBSVM与LIBLINEAR但实现方式却完全不同。LIBSVM采取的one vs one的�
 一般来说，我们使用LIBLINEAR或者LIBSVM，可以直接调用系统的训练与预测函数，不需要直接去接触训练得到的模型文件。但有时候我们也可能需要在自己的平台实现预测的算法，这时候就不可避免的要对模型文件进行解析。
 
 由于LIBLINEAR与LIBSVM的训练模型不同，因此他们对应的模型文件格式也不同。LIBLINEAR训练结果的格式相对简单，例如：
-{% highlight %}
+{% highlight bash linenos%}
 solver_type L2R_L2LOSS_SVC_DUAL
 nr_class 3
 label 1 2 3
