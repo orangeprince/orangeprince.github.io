@@ -148,6 +148,7 @@ LIBSVM与LIBLINEAR但实现方式却完全不同。LIBSVM采取的one vs one的�
 一般来说，我们使用LIBLINEAR或者LIBSVM，可以直接调用系统的训练与预测函数，不需要直接去接触训练得到的模型文件。但有时候我们也可能需要在自己的平台实现预测的算法，这时候就不可避免的要对模型文件进行解析。
 
 由于LIBLINEAR与LIBSVM的训练模型不同，因此他们对应的模型文件格式也不同。LIBLINEAR训练结果的格式相对简单，例如：
+{% highlight linenos %}
 solver_type L2R_L2LOSS_SVC_DUAL
 nr_class 3
 label 1 2 3
@@ -159,10 +160,10 @@ w
 -0.6814324057724231 0.4263611607497726 -0.4190714505083906
 -0.1505088594898125 0.2709227166451816 -0.1929294695905781
 2.14656708009991 -0.007495770268046003 -0.1880325536062815
-
-{% highlight java linenos %}
-class Test{
-	public static void main(){
+{% endhighlight%}
+{% highlight scala linenos %}
+object Test{
+	def main(){
 	}
 }
 {% endhighlight%}
