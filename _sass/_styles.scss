@@ -67,11 +67,21 @@ blockquote, blockquote p {
 
 code {
     color: $accent;
-    font-family: "Consolas",  "Courier New", "Courier";
+    font-family: "Courier New", "Courier";
     font-size: 1.0em;
     text-indent:0px;
     line-height: 150%
     /*font-weight: bold;*/
+
+    .nt {
+        color: #c85b5c;
+    }
+    .na {
+        color: #f0e687;
+    }
+    .s {
+        color: #87ceeb;
+    }
 }
 
 .highlight {
@@ -86,9 +96,10 @@ code {
     line-height:120%;
     text-indent:0px;
     code {
-        color: $black;
-        font-family: "Monaco", "Consalas", "Courier New", "Courier";
+        color: $accent;
+        font-family: "Courier New", "Courier";
         font-size: 1.0em;
+        line-height: 150%
         .lineno {
             margin-right: $lh/2;
             color: $grey-light;
