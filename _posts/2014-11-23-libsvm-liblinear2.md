@@ -10,14 +10,12 @@ LIBSVM和LIBLINEAR都提供了多种不同的模型供使用者选择，不同�
 
 ###libsvm
 下面是LIBSVM帮助内容提供的介绍，给出了LIBSVM支持的5种模型。其中模型0和1对应的都是SVM的分类模型，2对应的是one-class分类器，也就是只需要标注一个标签，模型3和4对应的是SVM的回归模型。
-{% highlight bash %}
 -s svm_type : set type of SVM (default 0)
 	0 -- C-SVC		(multi-class classification)
 	1 -- nu-SVC		(multi-class classification)
 	2 -- one-class SVM
 	3 -- epsilon-SVR	(regression)
 	4 -- nu-SVR		(regression)
-{% endhighlight %}
 首先来看最基础的C-SVC模型。SVM可以写成如下的优化目标函数（这里不详细介绍推导算法了）：
 
 $$
@@ -150,7 +148,6 @@ LIBSVM与LIBLINEAR但实现方式却完全不同。LIBSVM采取的one vs one的�
 一般来说，我们使用LIBLINEAR或者LIBSVM，可以直接调用系统的训练与预测函数，不需要直接去接触训练得到的模型文件。但有时候我们也可能需要在自己的平台实现预测的算法，这时候就不可避免的要对模型文件进行解析。
 
 由于LIBLINEAR与LIBSVM的训练模型不同，因此他们对应的模型文件格式也不同。LIBLINEAR训练结果的格式相对简单，例如：
-{% highlight bash %}
 solver_type L2R_L2LOSS_SVC_DUAL
 nr_class 3
 label 1 2 3
@@ -162,7 +159,6 @@ w
 -0.6814324057724231 0.4263611607497726 -0.4190714505083906
 -0.1505088594898125 0.2709227166451816 -0.1929294695905781
 2.14656708009991 -0.007495770268046003 -0.1880325536062815
-{% endhighlight%}
 
 {% highlight java linenos %}
 class Test{
