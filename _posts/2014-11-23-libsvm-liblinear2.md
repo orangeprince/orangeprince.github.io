@@ -160,11 +160,12 @@ w
 -0.1505088594898125 0.2709227166451816 -0.1929294695905781
 2.14656708009991 -0.007495770268046003 -0.1880325536062815
 
+{% highlight java linenos %}
 class Test{
 	public static void main(){
 	}
 }
-
+{% endhighlight%}
 上面的<code>solver_type</code>表示求解类型
 
 	
