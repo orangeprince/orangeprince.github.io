@@ -3,6 +3,17 @@
 <meta name="description" content="{{ page.description }}">
 <meta name="keywords" content="{{ page.tags | join: ', ' }}">
 
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']], displayMath: [ ['$$','$$'], ["\\[","\\]"] ]},
+    TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}}, 
+                "HTML-CSS": { 
+                    linebreaks: {automatic: true}, matchFontHeight: true, availableFonts:["TeX"], jax: ["input/Tex", "output/HTML-SVG"]}, 
+                SVG: {linebreaks: {automatic: true}, matchFontHeight: false}
+                                })
+</script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 <meta property="og:locale" content="en_US">
 <meta property="og:title" content="{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}">
@@ -22,7 +33,7 @@
 <link rel="stylesheet" href="//fonts.useso.com/css?family=Crimson+Text:400,400italic,700,700italic" rel='stylesheet' type='text/css' />
 <link href="//fonts.useso.com/css?family=Source+Sans+Pro:400,700" rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="{{ site.url }}/assets/css/entypo.css" media="all">
-<link rel="stylesheet" href="{{ site.url }}/assets/css/pygments.css" media="all">
+
 <!-- In order to use Calendas Plus, you must first purchase it. Then, create a font-face package using FontSquirrel.
 <link rel='stylesheet' href='{{ site.url }}/assets/cal.css' media='all' />
 -->
@@ -37,17 +48,6 @@
 <script src="//ajax.useso.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
 <meta http-equiv="cleartype" content="on">
-
-
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-<script type="text/javascript">
-    MathJax.Hub.Config({
-        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']], displayMath: [ ['$$','$$'], ["\\[","\\]"] ]},
-        TeX: {equationNumbers: {autoNumber: ["AMS"], useLabelIds: true}}, 
-        "HTML-CSS": {linebreaks: {automatic: true}, matchFontHeight: true, availableFonts:["TeX"], jax: ["input/Tex", "output/HTML-SVG"]}, 
-        SVG: {linebreaks: {automatic: true}, matchFontHeight: false}
-    })
-</script>
 
 <!-- Load Modernizr -->
 <script src="{{ site.url }}/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
@@ -68,7 +68,7 @@
         <nav role="navigation">
           <ul>
             <li>
-              <a href="/" title="{{ site.title }}">Technical</a>
+              <a href="/" title="{{ site.title }}">Home</a>
             </li>
             
             {% for link in site.links %}
