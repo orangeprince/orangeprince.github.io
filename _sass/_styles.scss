@@ -66,7 +66,7 @@ blockquote, blockquote p {
 /*   Code Formatting    */
 
 code {
-    color: $link;
+    color: lighten($black, .2);
     font-family: "Courier New", "Courier";
     font-size: 1.0em;
     text-indent:0px;
