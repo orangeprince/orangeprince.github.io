@@ -684,6 +684,9 @@ footer {
 
 @media only screen and (max-width: $breakpoint-2-max-width) {
     
+ body {
+     text-indent: 0px;
+ }
 // Type Fixes
 
 h1 {
@@ -723,7 +726,7 @@ footer {
 @media only screen and (max-width: 500px) {
 
  body {
-     text-indent: 0px
+     text-indent: 0px;
  }
     footer {
     
@@ -753,7 +756,7 @@ footer {
 @media only screen and (max-width : 680px) {
     
  body {
-     text-indent: 0px
+     text-indent: 0px;
  }
       
   section.article img.loading {
