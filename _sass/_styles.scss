@@ -65,13 +65,13 @@ blockquote, blockquote p {
 
 .highlight {
     font-size: $fs5;
-    background: rgba(0,178,179,0.16667);
+    /*background: rgba(0,178,179,0.16667);*/
     padding: 12px;
     border-width: 1px 1px 1px 5px;
     border-style: solid;
     border-color: rgba(0,178,179,0.33333);
     border-radius: 4px;
-    box-shadow: 0 0 3px rgba(0,178,179,0.16667);
+    /*box-shadow: 0 0 3px rgba(0,178,179,0.16667);*/
     margin-bottom: $lh;
     overflow-x: scroll;
     margin-left:auto;  
@@ -93,7 +93,7 @@ blockquote, blockquote p {
 
 code{
     font-family: "Monaco", "Consolas", "Courier New", "Courier", "monospace";
-    /*background: rgba(0,178,179,0.16667);*/
+    background: rgba(0,178,179,0.16667);
 }
 
 hr {
