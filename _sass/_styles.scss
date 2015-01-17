@@ -63,29 +63,9 @@ blockquote, blockquote p {
 }
 
 
-/*   Code Formatting    */
-
-code {
-    font-family: "Courier New", "Courier";
-    font-size: 1.0em;
-    text-indent: 0px;
-    line-height: 150%;
-    /*font-weight: bold;*/
-
-    .nt {
-        color: #c85b5c;
-    }
-    .na {
-        color: #f0e687;
-    }
-    .s {
-        color: #87ceeb;
-    }
-}
 
 .highlight {
     padding: 12px;
-    background: #e7e7e7;
     border-radius: 4px;
     margin-bottom: $lh;
     overflow-x: scroll;
@@ -100,7 +80,6 @@ code {
         line-height: 150%;
         .lineno {
             margin-right: $lh/2;
-            color: $grey-light;
         }
         .nt {
             color: #c85b5c;
