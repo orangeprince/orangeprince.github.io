@@ -164,12 +164,12 @@ w
 2.14656708009991 -0.007495770268046003 -0.1880325536062815
 {% endhighlight%}
 
-{% highlight java %}
+<pre class="prettyPrint">
 class Test{
 	public static void main(){
 	}
 }
-{% endhighlight%}
+</pre>
 上面的<code>solver_type</code>表示求解类型
 
 	
