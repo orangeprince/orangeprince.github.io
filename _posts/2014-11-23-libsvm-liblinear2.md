@@ -167,6 +167,6 @@ object Test{
 	}
 }
 {% endhighlight%}
-上面的<code>solver_type</code>表示求解类型
+上面的<fc>solver_type</fc>表示求解类型
 
 	
