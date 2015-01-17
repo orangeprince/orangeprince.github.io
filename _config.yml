@@ -28,14 +28,14 @@ links:
 timezone:    America/New_York
 future:      true
 highlighter: pygments
-markdown:    redcarpet
+markdown:    kramdown
 
 kramdown:
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
-  use_coderay: false
+  use_coderay: true
 
   coderay:
     coderay_line_numbers:
