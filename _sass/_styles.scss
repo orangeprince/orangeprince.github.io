@@ -62,7 +62,12 @@ blockquote, blockquote p {
     margin-bottom: $lh;
 }
 
-
+code{
+    font-family: "Monaco", "Consolas", "Courier New", "Courier", "monospace";
+    background-color: rgba(255,228,181,0.16667);
+    border: 1px solid rgba(0,0,0,0.33333);
+    box-shadow: 0 0 1px rgba(0,0,0,0.16667);
+}
 
 .highlight {
     font-size: $fs5;
@@ -81,7 +86,7 @@ blockquote, blockquote p {
     line-height:120%;
     text-indent:0px;
     code {
-        font-family: "Monaco", "Consolas", "Courier New", "Courier";
+        font-family: "Monaco", "Consolas", "Courier New", "Courier", "monospace";
         font-size: 1.0em;
         line-height: 150%;
         .lineno {
