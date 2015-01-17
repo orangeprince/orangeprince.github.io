@@ -66,12 +66,17 @@ blockquote, blockquote p {
 /*   Code Formatting    */
 
 code {
+    padding: 12px;
+    background: #e7e7e7;
+    border-radius: 4px;
+    margin-bottom: $lh;
+    overflow-x: scroll;
     color: $accent;
     font-family: "Courier New", "Courier";
     font-size: 1.0em;
     text-indent:0px;
     line-height: 150%;
-    /*font-weight: bold;*/
+    font-weight: bold;
     .nt {
         color: #c85b5c;
     }
@@ -97,6 +102,7 @@ code {
     code {
         color: $accent;
         font-family: "Courier New", "Courier";
+        font-weight: bold;
         font-size: 1.0em;
         .lineno {
             margin-right: $lh/2;
