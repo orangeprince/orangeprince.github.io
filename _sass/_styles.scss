@@ -71,7 +71,7 @@ blockquote, blockquote p {
     border-style: solid;
     border-color: rgba(0,178,179,0.33333);
     border-radius: 4px;
-    /*box-shadow: 0 0 3px rgba(0,178,179,0.16667);*/
+    box-shadow: 0 0 3px rgba(0,178,179,0.16667);
     margin-bottom: $lh;
     overflow-x: scroll;
     margin-left:auto;  
