@@ -29,11 +29,11 @@ blockquote, blockquote p {
     font-style: italic;
     text-align: left;
     color: lighten($black, .2);
-    border-left: 4px solid #e5e5e5;
+    border-left: 4px solid $link;
     text_indent: 0px;
     font-family: $sans;
     margin-bottom: $lh;
-    font-size: $fs5;
+    font-size: $fs4;
 }
 
 a, a:visited, a:active {
