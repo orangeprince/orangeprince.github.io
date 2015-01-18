@@ -52,6 +52,15 @@ $$
 ### $\ell_1$norm的使用
 在LIBLINEAR中，除了提供上面提到的$\ell_2$norm正则化项之外，还提供了$\ell_1$norm的选项。$\ell_1$norm一般写成$\parallel w \parallel_1$，其实就是对向量$w$中的所有元素的绝对值进行求和。与$\ell_2$norm相比，$\ell_1$norm也具有
 
+> dfdfddfd
+> dfdfdfd
+> dfdf
+
+dsfsdfsds
+sdfdsfds
+dfdsfsdfsdfs
+dsfd
+
 
 
 
