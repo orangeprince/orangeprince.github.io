@@ -41,4 +41,5 @@ s.t. \quad & \parallel w \parallel_2^2  < r^2
 $$
 
 通过参数$s$限制$w$的大小，而$r$与$C$也存在着一定正向相关的关系。因此，当$C$较小时，$w$的取值也被限制在的一个很小的范围内。
-![L2Norm]{/images/11/l2.svg)
+
+![L2Norm](/images/11/l2.svg)
