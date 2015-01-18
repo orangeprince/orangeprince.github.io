@@ -8,7 +8,7 @@ title: LIBSVM与LIBLINEAR（二）
 ##模型与优化
 LIBSVM和LIBLINEAR都提供了多种不同的模型供使用者选择，不同的模型有各自适用的场景。下面分别介绍LIBSVM和LIBLINEAR所提供的各种模型。
 
-###libsvm
+###LIBSVM
 下面是LIBSVM帮助内容提供的介绍，给出了LIBSVM支持的5种模型。其中模型0和1对应的都是SVM的分类模型，2对应的是one-class分类器，也就是只需要标注一个标签，模型3和4对应的是SVM的回归模型。
 {% highlight bash linenos%}
 -s svm_type : set type of SVM (default 0)
@@ -121,7 +121,7 @@ $\Omega$一般被称为正则化项(Regularizer)，最常使用的就是前面�
 	
 对于上面的问题，有很多成熟的算法可以进行模型的求解，比如最速梯度法，牛顿法等，对于样本量较大时，也可以采用随机梯度的方法进行训练。	一般来说，由于考虑了二阶导数，牛顿法本身的优化效率要高于只考虑一阶导数的最速梯度法。但由于牛顿法本身在计算量和收敛性上存在很多局限性，所以很少直接使用，而是在牛顿法思想基础上进行一定的改进。其中普遍使用的算法有BFGS和L-BFGS等。具体到liblinear软件包，作者采用的是Trust Region Newton (TRON) method对模型对传统牛顿法进行了改进，该方法被证明比L-BFGS训练更加高效。
 
-LIB LINEAR中实现了基于TRON方法的L-2 SVM和Logistical Regression模型训练。其中的L2-loss SVM是标准SVM的变种，loss function变成了：
+LIBLINEAR中实现了基于TRON方法的L-2 SVM和Logistical Regression模型训练。其中的L2-loss SVM是标准SVM的变种，loss function变成了：
 
 $$
 \large
