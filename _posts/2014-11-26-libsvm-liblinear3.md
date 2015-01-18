@@ -36,7 +36,7 @@ $$
 \large
 \begin{aligned}
 \underset{w}{\operatorname{argmin}} \quad &  \sum_{i=1}^l \ell(y_i, w^Tx_i) \\
-s.t. \quad & \parallel w \parallel_2^2
+s.t. \quad & \parallel w \parallel_2^2 \< s^2
 \end{aligned}
 $$
 
