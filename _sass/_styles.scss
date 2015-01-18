@@ -25,7 +25,7 @@ p {
     margin-bottom: $lh;
 }
 
-blockquote, blockquote p {
+blockquote{
     font-style: italic;
     text-align: left;
     color: lighten($black, .2);
