@@ -2,7 +2,7 @@
 layout: post-no-feature
 title: "LIBSVM与LIBLINEAR（三）"
 category: tech
-tags:  [MachineLearning]
+tags: [MachineLearning]
 ---
 
 ## 调节参数
@@ -53,6 +53,8 @@ $$
 在LIBLINEAR中，除了提供上面提到的$\ell_2$norm正则化项之外，还提供了$\ell_1$norm的选项。$\ell_1$norm一般写成$\parallel w \parallel_1$，其实就是对向量$w$中的所有元素的绝对值进行求和。与$\ell_2$norm相比，$\ell_1$norm也具有对$w$本身大小的约束，使得$w$的某些维度值不至于过大而导致过拟合。这个特性在统计学上也称作收缩”shrinkage”。而此外，$\ell_1$norm还有另外一个非常有用的特征，即能够使学习到的$w$比较稀疏（sparse），也就是存在很多的$0$项，而且可以通过系数$C$控制$0$项的的个数。当$C$减小时，$w$的非0项就增多，当$C$无限小时，由于完全没有拟合损失的压力，$w$也可以变成全部是$0$了。
 
 为什么$\ell_1$norm还有这样的功能呢？说来话长，下次可以专门在写博客讨论了。简单来说，是因为$\ell_1$norm的特殊性质决定的。
+
+
 
 
 
