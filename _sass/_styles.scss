@@ -14,10 +14,8 @@ body {
   text-justify:inter-ideograph;
   blockquote, blockquote p {
       font-style: italic;
-      line-height: 1.3em;
-      text-align: center;
+      text-align: left;
       color: lighten($black, .2);
-      margin-bottom: $lh;
       border-left: 4px solid #e5e5e5;
   }
 }
