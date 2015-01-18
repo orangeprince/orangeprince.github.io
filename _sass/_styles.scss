@@ -12,13 +12,9 @@ body {
   overflow-x: hidden;
   text-align:justify;
   text-justify:inter-ideograph;
-  blockquote, blockquote p {
-      font-style: italic;
-      text-align: left;
-      color: lighten($black, .2);
-      border-left: 4px solid #e5e5e5;
-  }
+
 }
+
 
 h1,h2,h3,h4,h5 {
     font-family: $sans;
@@ -27,6 +23,17 @@ h1,h2,h3,h4,h5 {
 
 p {
     margin-bottom: $lh;
+}
+
+blockquote, blockquote p {
+    font-style: italic;
+    text-align: left;
+    color: lighten($black, .2);
+    border-left: 4px solid #e5e5e5;
+    text_indent: 0px;
+    font-family: $sans;
+    margin-bottom: $lh;
+    font-size: $fs5;
 }
 
 a, a:visited, a:active {
