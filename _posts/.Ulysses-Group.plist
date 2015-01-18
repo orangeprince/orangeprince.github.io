@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>createMarkedFile</key>
+	<false/>
+	<key>sheetClusters</key>
+	<array>
+		<array>
+			<string>2014-05-28-hello-world.md</string>
+		</array>
+		<array>
+			<string>2014-11-22-libsvm-liblinear.md</string>
+		</array>
+		<array>
+			<string>2014-11-23-libsvm-liblinear2.md</string>
+		</array>
+		<array>
+			<string>2014-11-26-libsvm-liblinear3.md</string>
+		</array>
+		<array>
+			<string>2015-01-03-year-and-half.md</string>
+		</array>
+		<array>
+			<string>2015-01-11-user-analysis.md</string>
+		</array>
+	</array>
+</dict>
+</plist>
