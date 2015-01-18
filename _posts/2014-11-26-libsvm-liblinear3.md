@@ -2,7 +2,7 @@
 layout: post-no-feature
 title: "LIBSVM与LIBLINEAR（三）"
 category: tech
-tags:  [MachineLearning]()
+tags:  [MachineLearning]
 ---
 
 ## 调节参数
