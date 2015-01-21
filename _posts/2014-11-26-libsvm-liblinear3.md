@@ -73,13 +73,12 @@ $$
 $$
 \begin{align}
 \large
-K(x_1, x_2) &= exp(-\gamma\parallel x_1 - x_2\parallel^2}) \nonumber
-			&= exp\left(- \gamma(-\parallel x_1 \parallel^2 + 2x_1^Tx_2  -\parallel x_2 \parallel^2) \right) \nonumber
+K(x_1, x_2) &= exp(-\gamma\parallel x_1 - x_2\parallel^2}) \nonumber \\
+			&= exp\left(- \gamma(-\parallel x_1 \parallel^2 + 2x_1^Tx_2  -\parallel x_2 \parallel^2) \right) \nonumber \\
 			&= exp(-\gamma \parallel x_1 \parallel ^2 ) exp(-gamma \parallel x_2 \parallel ^2
-exp(2\gamma x_1^Tx_2) \nonumber
+exp(2\gamma x_1^Tx_2) \nonumber \\
 			&= xp(-\gamma \parallel x_1 \parallel ^2 ) exp(-gamma \parallel x_2 \parallel ^2
 \sum_{n=0}^n \frac{(2x_1^Tx_2}^n{n!}
-
 \end{align}
 $$
 
