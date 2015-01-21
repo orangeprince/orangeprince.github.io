@@ -13,9 +13,9 @@ LIBSVM和LIBLINEAR工具包都包含很多需要调节的参数，参数的调�
 
 $$
 \large
-\begin{aligned}
+\begin{align}
 \underset{w}{\operatorname{argmin}}  \quad \Omega(\phi(w))  + C \sum_{i=1}^l \ell(y_i, \phi(w)^T\phi(x_i))
-\end{aligned}
+\end{align}
 $$
 
 其中右边的一项是模型的损失项，其大小表明了分类器对样本的拟合程度。而左边的一项，则是人为加上的损失，与训练样本无关，被称作正则化项(Regularizer)，反映了对训练模型额外增加的一些约束。而参数$C$则负责调整两者之间的权重。$C$越大，则要求模型能够更好地拟合训练样本数据，反之，则要求模型更多的满足正则化项的约束。以LIBLINEAR为例，下面先讨论LIBLINEAR下$\ell_2$norm的情况：
@@ -34,16 +34,16 @@ $$
 
 $$
 \large
-\begin{aligned}
+\begin{align}
 \underset{w}{\operatorname{argmin}} \quad &  \sum_{i=1}^l \ell(y_i, w^Tx_i) \\
 s.t. \quad & \parallel w \parallel_2^2 < s^2
-\end{aligned}
+\end{align}
 $$
 
 
 通过参数$s$限制$w$的大小，而$s$与$C$也存在着一定正向相关的关系。因此，当$C$较小时，$w$的取值也被限制在的一个很小的范围内。下面的图给了一个非常直观的解释：
 
-![L2Norm](/images/11/l2.svg)
+![L2Norm](/images/11/l2.svg "$\ell_2$norm示意")
 
 由于有了对w取值的限制，就出现了两种情况。第一种是当$s$不够大的时候，此时如果沿梯度下降的方向一直搜索，找到全局最优解，就已经找出圈外，不满足下面的约束项。这个时候，只能在满足约束的条件下找到尽量好的解。根据KKT条件，此时的最优解一定是划定范围的圆圈与目标函数等梯度线相切的位置，如上图左边所示。如果把梯度图看成一座山的等高线，那边最优解的位置一定是等高线中凸起的部分，类似于一座山上的山脊或者山岭，这也是脊（岭）回归的由来。另一种情况是当$s$足够大的时候，这个时候，在由$s$所划定的范围内已经能够达到全局最优解，这个时候，下面的约束项其实并没有起到作用，就如上图右边所示。
 
