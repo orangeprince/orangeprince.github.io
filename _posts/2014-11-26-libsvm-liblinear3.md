@@ -64,7 +64,7 @@ rbf的全称是Radial Basis Function，中文叫做径向基函数。而一般�
 $$
 \begin{align}
 \large
-K(x_1, x_2) = exp(-\gamma\parallel x_1 - x_2\parallel^2})
+K(x_1, x_2) = exp(-\gamma \parallel x_1 - x_2 \parallel^2)
 \end{align}
 $$
 
@@ -73,7 +73,7 @@ $$
 $$
 \begin{align}
 \large
-K(x_1, x_2) &= exp(-\gamma\parallel x_1 - x_2\parallel^2}) \nonumber \\
+K(x_1, x_2) &= exp(-\gamma\parallel x_1 - x_2\parallel^2) \nonumber \\
 			&= exp\left(- \gamma(-\parallel x_1 \parallel^2 + 2x_1^Tx_2  -\parallel x_2 \parallel^2) \right) \nonumber \\
 			&= exp(-\gamma \parallel x_1 \parallel ^2 ) exp(-gamma \parallel x_2 \parallel ^2
 exp(2\gamma x_1^Tx_2) \nonumber \\
