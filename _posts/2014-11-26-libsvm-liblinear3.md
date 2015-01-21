@@ -64,10 +64,24 @@ rbf的全称是Radial Basis Function，中文叫做径向基函数。而一般�
 $$
 \begin{align}
 \large
-K(x_1, x_2) = exp(-\frac{\parallel x_1 - x_2\parallel^2}{2 \sigma ^2})
+K(x_1, x_2) = exp(-\gamma\parallel x_1 - x_2\parallel^2})
 \end{align}
 $$
 
+可见，高斯核函数是对两点之间的欧氏距离进行了一定的变换，且变换受到参数$\gamma$的控制。应该怎样理解高斯核函数的意义与$\gamma$的作用的？我们不妨对上面的距离函数做一些数学上的推导：
+
+$$
+\begin{align}
+\large
+K(x_1, x_2) &= exp(-\gamma\parallel x_1 - x_2\parallel^2}) \nonumber
+			&= exp\left(- \gamma(-\parallel x_1 \parallel^2 + 2x_1^Tx_2  -\parallel x_2 \parallel^2) \right) \nonumber
+			&= exp(-\gamma \parallel x_1 \parallel ^2 ) exp(-gamma \parallel x_2 \parallel ^2
+exp(2\gamma x_1^Tx_2) \nonumber
+			&= xp(-\gamma \parallel x_1 \parallel ^2 ) exp(-gamma \parallel x_2 \parallel ^2
+\sum_{n=0}^n \frac{(2x_1^Tx_2}^n{n!}
+
+\end{align}
+$$
 
 
 
