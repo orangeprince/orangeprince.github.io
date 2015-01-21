@@ -22,9 +22,9 @@ $$
 
 $$
 \large
-\begin{aligned}
+\begin{align}
 \underset{w}{\operatorname{argmin}}  \quad \parallel w \parallel_2^2  + C \sum_{i=1}^l \ell(y_i, w^Tx_i)
-\end{aligned}
+\end{align}
 $$
 
 之所以要增加正则化项，是因为在设计模型的时候，我们对于样本的质量以及模型的泛化能力没有充分的自信，认为在没有其他约束的情况下，训练得到的模型会因为过于迁就已有的样本数据而无法对新的数据达到同样的效果。在这个时候，就必须在模型中增加人类的一些经验知识。比如上面对$\phi(w)$增加$\ell_2$norm的约束就是如此。如果上面公式中的损失函数对应一个回归问题，那么这个问题就被称作Ridge Regression，中文叫做脊回归或者岭回归。
