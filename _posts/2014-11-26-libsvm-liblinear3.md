@@ -76,7 +76,7 @@ $$
 K(x_1, x_2) &= e^{-\gamma\parallel x_1 - x_2\parallel^2} \nonumber \\
 			&= e^{ - \gamma(-\parallel x_1 \parallel^2 + 2x_1^Tx_2  -\parallel x_2 \parallel^2)} \nonumber \\
 			&= e^{-\gamma \parallel x_1 \parallel ^2 } e^{-\gamma \parallel x_2 \parallel ^2} e^{2\gamma x_1^Tx_2} \nonumber \\
-			&= e^{-\gamma \parallel x_1 \parallel ^2 } e^{-\gamma \parallel x_2 \parallel ^2} \sum_{n=0}^\Inf \frac{(2\gamma x_1^Tx_2)^n}{n!}
+			&= e^{-\gamma \parallel x_1 \parallel ^2 } e^{-\gamma \parallel x_2 \parallel ^2} \sum_{n=0}^\infty \frac{(2\gamma x_1^Tx_2)^n}{n!}
 \end{align}
 $$
 
