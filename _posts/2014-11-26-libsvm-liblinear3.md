@@ -60,7 +60,7 @@ $$
 如果使用LIBSVM的话，参数调节的工作就会更复杂一些。首先是kernel的使用。一般来说rbf kernel是被鼓励优先使用的。如果使用rbf kernel效果都无法调到满意，那么采用poly或linear也无济于事。在一些特殊场景下，可以考虑自定义kernel，这在LIBSVM中也是支持的。
 
 rbf的全称是Radial Basis Function，中文叫做径向基函数。而一般在SVM使用的rbf是Gaussian RBF，也就是我们一般所说的高斯核函数。给定两个点$x_1$和$x_2$，Gaussian RBF定义为：
-
+		
 $$
 \begin{align}
 \large
@@ -68,17 +68,20 @@ K(x_1, x_2) = exp(-\gamma \parallel x_1 - x_2 \parallel^2)
 \end{align}
 $$
 
-可见，高斯核函数是对两点之间的欧氏距离进行了一定的变换，且变换受到参数$\gamma$的控制。应该怎样理解高斯核函数的意义与$\gamma$的作用的？我们不妨对上面的距离函数做一些数学上的推导：
+可见，高斯核函数是对两点之间的欧氏距离进行了一定的变换，且变换受到参数$\gamma$的控制。应该怎样理解高斯核函数的意义与$\gamma$的作用的？
+
 
 $$
 \begin{align}
 \large
-K(x_1, x_2) &= e^{-\gamma\parallel x_1 - x_2\parallel^2} \nonumber \\
-			&= e^{ - \gamma(-\parallel x_1 \parallel^2 + 2x_1^Tx_2  -\parallel x_2 \parallel^2)} \nonumber \\
-			&= e^{-\gamma \parallel x_1 \parallel ^2 } e^{-\gamma \parallel x_2 \parallel ^2} e^{2\gamma x_1^Tx_2} \nonumber \\
-			&= e^{-\gamma \parallel x_1 \parallel ^2 } e^{-\gamma \parallel x_2 \parallel ^2} \sum_{n=0}^\infty \frac{(2\gamma x_1^Tx_2)^n}{n!}
+K(x_1, x_2) &= exp(-\gamma\parallel x_1 - x_2\parallel^2) \nonumber \\
+			&= exp( - \gamma(-\parallel x_1 \parallel^2 + 2x_1^Tx_2  -\parallel x_2 \parallel^2))\nonumber \\
+			&= exp( -\gamma \parallel x_1 \parallel ^2 ） exp(-\gamma \parallel x_2 \parallel ^2) exp(2\gamma x_1^Tx_2 )\nonumber \\
+			&= exp( -\gamma \parallel x_1 \parallel ^2 ） exp(-\gamma \parallel x_2 \parallel ^2) \sum_{n=0}^\infty \frac{(2\gamma x_1^Tx_2)^n}{n!}
 \end{align}
 $$
 
+当$\gamma$较小，或者说在极端情况趋向于$0$的时候，可以有$\sum_{n=0}^\infty \frac{(2\gamma x_1^Tx_2)^n}{n!} \approx 2\gamma x_1^Tx_2 $，也就是$n>1$以后的项远小于$n=1$项。这个时候，rbf kernel的效果其实和linear kernel相差无几。
 
+相反，当$\gamma$增大时，$n>1$以后的项也产生作用，其基本思想和poly kernel差不多，只是rbf直接把维度上升到了无穷而已。当$\gamma$增加到极致，
 
