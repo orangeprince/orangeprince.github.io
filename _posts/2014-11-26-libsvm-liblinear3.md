@@ -76,12 +76,18 @@ $$
 \large
 K(x_1, x_2) &= exp(-\gamma\parallel x_1 - x_2\parallel^2) \nonumber \\
 			&= exp( - \gamma(-\parallel x_1 \parallel^2 + 2x_1^Tx_2  -\parallel x_2 \parallel^2))\nonumber \\
-			&= exp( -\gamma \parallel x_1 \parallel ^2 ） exp(-\gamma \parallel x_2 \parallel ^2) exp(2\gamma x_1^Tx_2 )\nonumber \\
-			&= exp( -\gamma \parallel x_1 \parallel ^2 ） exp(-\gamma \parallel x_2 \parallel ^2) \sum_{n=0}^\infty \frac{(2\gamma x_1^Tx_2)^n}{n!}
+			&= exp( -\gamma \parallel x_1 \parallel ^2) exp(-\gamma \parallel x_2 \parallel ^2) exp(2\gamma x_1^Tx_2 )\nonumber \\
+			&= exp( -\gamma \parallel x_1 \parallel ^2) exp(-\gamma \parallel x_2 \parallel ^2) \sum_{n=0}^\infty \frac{(2\gamma x_1^Tx_2)^n}{n!}
 \end{align}
 $$
 
 当$\gamma$较小，或者说在极端情况趋向于$0$的时候，可以有$\sum_{n=0}^\infty \frac{(2\gamma x_1^Tx_2)^n}{n!} \approx 2\gamma x_1^Tx_2 $，也就是$n>1$以后的项远小于$n=1$项。这个时候，rbf kernel的效果其实和linear kernel相差无几。
 
-相反，当$\gamma$增大时，$n>1$以后的项也产生作用，其基本思想和poly kernel差不多，只是rbf直接把维度上升到了无穷而已。当$\gamma$增加到极致，
+相反，当$\gamma$增大时，$n>1$以后的项也产生作用，其基本思想和poly kernel差不多，只是rbf直接把维度从有限维度的多项式上升到了无穷维的多项式而已。当$\gamma$无限增大时，可以看到，除非$\parallel x_1 - x_2 \parallel^2$为$0$，否则K(x_1, x_2) 都会无限趋近于0。也就是说，当$\gamma$趋近于无穷大的时候，每一个数据点除了和其自身外，和其他点得距离都为$0$。在这种情况下，模型训练的结果只能是把所有点都作为支持向量，因此在训练数据上精度可以达到100%。这样的模型也可以看成KNN的特殊情况，此时的$K$等于$1$。
+
+上面分别讨论了问题的两个极端情况。当$\gamma$无限小的时候，rbf核SVM和线性SVM效果类似，因此模型的复杂度，或者说VC维较低，不容易过拟合。而当$\gamma$值无限增大时，所有点都变成支持向量，模型复杂多或者说VC维最高，也最容易过拟合。而一般情况下，$\gamma$取一个中间值，也就间距两者的意义，相比于线性模型，可以选择更多的支持向量，增加模型的复杂度与拟合能力。而相比于1-NN模型，也会适当降低模型的复杂度，避免过拟合的风险。此外，从上面的讨论也可以看出，通过参数调整，rbf核基本上可以达到与线性核以及poly核差不多的效果。所以，在不考虑计算效率的情况下，为了达到最优模型，只需要针对rbf模型进行调参就可以了。
+
+上面在参数调整的讨论里，都假设参数$C$是固定的。但在实际SVM的调参过程中，$C$和$\gamma$是同时变化的，这进一步增加了调参的复杂性。关于两个变量之间的关系，也有很多理论上的分析与讨论，这里不过多进行讨论，可以参考文件：Asymptotic Behaviors of Support Vector Machines with Gaussian Kernel。
+
+在实际的应用场景下，我们可以通过cross-validate的方法对参数进行遍历，选择最佳的参数组合。LIBSVM也提供了grid.py工具，用于SVM的调参。在一般的应用中，我们只需要设置参数的可变范围，然后在训练数据中对参数组合进行遍历，选择最优参数组合就可以了。
 
