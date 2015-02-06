@@ -8,6 +8,7 @@ tags: [MachineLearning]
 下面是我的一些看法：
 
 首先需要澄清几个概念：
+
 **1. 浅层（shallow）的监督学习(supervised learning)**
 代表性方法：Logistic Regression，Adaboost, Decision Tree等。
 这一类方法的输入是data的原始特征，输出是data的label，不存在任何的中间层。
@@ -32,6 +33,7 @@ tags: [MachineLearning]
 下面来看w2v和glove这两个模型吧。算法细节就不讨论了，从我一开始读论文就觉得这两个模型跟深度学习关系不大，反倒更像是两种特殊的矩阵分解算法。从word到vector，并不存在任何的中间表达层，而是直接一步到位得到的。从这个意义上来说，这两个方法并不能称作是深度学习。否则，SVD++，Factorization Machines 这些方法也都能算作是deep learning了。反倒是最近一些利用RNN和CNN的多层神经网络对文本进行学习的方法是真正的deep learning方法。
 
 那为什么很多人都把他们和deep learning扯到一起呢？我觉得有几个原因：
+
 1. word2vec是之前神经网络语言模型的简化。而那个神经网络语言模型看起来似乎更像是一个“深度”的学习模型，不过仔细分析算法本身，最核心的特征学习其实只有两层。更何况word2vec又对这个模型做了很大的简化。
 
 2. word2vec是一个特征学习的方法，然后直接把特征学习等同到深度学习。这个前面已经多次讨论过，深度学习方法应该是特征学习方法的一个子集。就像说人类是能直立行走的动物，但是直立行走的动物未必就一定是人类。
