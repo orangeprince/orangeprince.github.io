@@ -35,4 +35,3 @@ $$
 * SVMLin。专为线性SVM训练开发的工具包，之前有过介绍，另外还支持半监督SVM的训练。
 * LIBLINEAR SPARK版本。最近LIBLINEAR提供了Spark版本，保留了Liblinear的一些基本功能，能够处理更大规模的数据。
 
- 
