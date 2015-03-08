@@ -519,7 +519,6 @@ header.site-header nav {
             @include underline(2px, solid, $grey-light);
         }
         li {
-            margin-left: 0px;
             list-style: disc;
             list-style-type: disc;
             margin-left: $lh*2;
