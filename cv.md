@@ -3,11 +3,11 @@ layout: cv
 title: Yang Liu (刘洋)
 
 ---
-## 联系方式
+### 联系方式
 * Email: [orangeprince88@gmail.com](mailto:orangeprince88@gmail.com)
 * 个人主页: [http://orangeprince.info](http://orangeprince.info)
 	
-## 经历
+### 经历
 
 #### 研究员 (2013.10 – Present)
 
