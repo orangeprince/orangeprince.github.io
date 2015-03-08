@@ -1,11 +1,9 @@
 ---
-layout: page
-title: About
-header: About
-group: navigation
+layout: cv
+title: Yang Liu (刘洋)
 ---
 
-## Yang Liu (刘洋)
+## Contact
 * Email: [orangeprince88@gmail.com](mailto:orangeprince88@gmail.com)
 * Homepage: [http://orangeprince.info](http://orangeprince.info)
 	
