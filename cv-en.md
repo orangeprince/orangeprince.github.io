@@ -8,12 +8,12 @@ title: Yang Liu (刘洋)
 * Homepage: [http://orangeprince.info](http://orangeprince.info)
 	
 ## Experience
-**Research Engineer** 
+### Social Network Group, Tencent (October 2013 – Present)
 
-* Social Network Group, Tencent (October 2013 – Present)
+* Social Network Group,的 Tencent (October 2013 – Present)
 * Social Network Group,的 Tencent (October 2013 – Present)
 
-**PHD Candidate** 
+### Collage of Computer Science, Zhejiang University (October 2013 – Present)
 
 * Collage of Computer Science, Zhejiang University
 * Zhejiang University
