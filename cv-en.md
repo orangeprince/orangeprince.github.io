@@ -1,4 +1,5 @@
 ---
+layout: cv
 title: Curriculum Vitae
 header: About
 ---
