@@ -3,18 +3,18 @@ layout: cv
 title: Yang Liu (刘洋)
 
 ---
-## Contact
+## 联系方式
 * Email: [orangeprince88@gmail.com](mailto:orangeprince88@gmail.com)
-* Homepage: [http://orangeprince.info](http://orangeprince.info)
+* 个人主页: [http://orangeprince.info](http://orangeprince.info)
 	
-## Experience
+## 经历
 
-#### Engineer at Tencent (2013.10 – Present)
+#### 研究员 (2013.10 – Present)
 
+* S
 * Social Network Group,的 Tencent (October 2013 – Present)
-* Social Network Group,的 Tencent (October 2013 – Present)
 
-#### Phd Candidate at Zhejiang University (2008.9 – 2013.9)
+#### 浙江大学计算机学院博士研究生 (2008.9 – 2013.9)
 
 * Collage of Computer Science, Zhejiang University
 * Zhejiang University
