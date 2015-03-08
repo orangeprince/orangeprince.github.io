@@ -1,5 +1,5 @@
 	---
-	layout: pages
+	layout: page
 	title: Curriculum Vitae
 	---
 	## Yang Liu (刘洋)
