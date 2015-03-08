@@ -9,12 +9,12 @@ title: Yang Liu (刘洋)
 	
 ## Experience
 
-### Social Network Group, Tencent (October 2013 – Present)
+#### Engineer at Tencent (2013.10 – Present)
 
 * Social Network Group,的 Tencent (October 2013 – Present)
 * Social Network Group,的 Tencent (October 2013 – Present)
 
-### Collage of Computer Science, Zhejiang University (October 2013 – Present)
+#### Phd Candidate at Zhejiang University (2008.9 – 1013.9)
 
 * Collage of Computer Science, Zhejiang University
 * Zhejiang University
