@@ -6,7 +6,7 @@ title: Yang Liu (刘洋)
 
 * Email: [orangeprince88@gmail.com](mailto:orangeprince88@gmail.com)
 * Homepage: [http://orangeprince.info](http://orangeprince.info)
-* Wechat: 
+* Wechat: ![QR_wechat]({{ site.url }}/images/QR_wechat)
 	
 ### Experience
 
@@ -15,3 +15,4 @@ title: Yang Liu (刘洋)
 * *September 2004 – June 2008*: Undergraduate Student at Software College, Zhejiang University 
 
 ### Skills
+* Solid
