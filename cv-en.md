@@ -6,7 +6,7 @@ title: Yang Liu (刘洋)
 
 * Email: [orangeprince88@gmail.com](mailto:orangeprince88@gmail.com)
 * Homepage: [http://orangeprince.info](http://orangeprince.info)
-* Wechat: ![QR_wechat]({{ site.url }}/images/QR_wechat.png=250x) 
+* Wechat: <a href="url"><img src="{{ site.url }}/images/QR_wechat.png" align="left" height="48" width="48" ></a>
 	
 ### Experience
 
