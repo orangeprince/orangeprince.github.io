@@ -47,3 +47,19 @@ Xiami([www.xiami.com](http://www.xiami.com)) is a popular online music community
 * X. Wang, **Y. Liu**, D. Wang, F. Wu: Cross-media Topic Mining on Wikipedia: in ACM Multimedia 2013 (Top conference on Multimedia).* **Y. Liu**, F. Wu, J. Shao, Y. Zhang, Y. Zhuang: Tag Clustering and Refinement on Semantic Unity Graph, in IEEE ICDM 2011 (Top conference on Data Mining).* Y. Zhuang, **Y. Liu**, F. Wu, J. Shao, Y. Zhang: Hypergraph Spectral Hashing for Similar- ity Search of Social Image, in ACM Multimedia 2011 (Top conference on Multimedia).
 * **Y. Liu**, J. Shao, F. Wu, Y. Zhuang: Hypergraph Spectral Hashing for Image Retrieval with Heterogeneous Social Contexts: in Neurocomputing, Volume 119, 7 November 2013, Pages 49–58 (SCI, Impact Factor: 2.005).
 * Y. Zhang, W. Lu, **Y. Liu**, F. Wu: Kernelized Sparse Hashing for Scalable Image Retrieval: in Neurocomputing, accepted (SCI, Impact Factor: 2.005).* **Y. Liu**, J. Shao: High Dimensionality Reduction Using CUR Matrix Decomposition and Auto-encoder for Web Image Classification, in PCM 2010 (International Conference on Multimedia).
+
+### Awards
+* Outstanding Employee Award of Tencent (Second half of 2014) 
+* Outstanding Employee Award of Social Network Group, Tencent (Second half of 2014) 
+* Outstanding Graduates Award in Zhejiang Uinversity (2013) 
+* National Scholarship for Postgraduate Student (2013)
+* Nandu Scholarship (2011, 2012)
+* First-class Postgraduate Scholarship of Zhejiang University (2011, 2012)
+* Excellent Tri-A Postgraduate Scholarship of Zhejiang University (2011).
+* Excellent Postgraduate Cadre Scholarship of Zhejiang University (2011).
+
+### Misc
+* Journal reviewer for IEEE Trans on Multimedia, IEEE Trans on Image Processing, CVIU, Neurocomputing, etc.
+* Conference organizing committee member for the 3rd Pao-Lu Hsu conference on machine learning and cross media, the 6th International Conference on Universal Digital Library, etc.
+* Teaching assistant experience for C Programming and Linux Operation System Ex- periments Courses in Zhejiang University for undergraduate students.
+* Technology administrator of the BBS system (http://www.zju88.net) in Zhejiang Uni- versity for 3 years. Mainly in charge of its system development and maintenance (C and web programming on Linux platform).
