@@ -16,7 +16,7 @@ title: Yang Liu (刘洋)
 * Undergraduate Student at Software College, Zhejiang University. (2004.9 – 2008.6)
 
 ### Skills
-* Machine learning and data mining metheds.
+* Machine learning and data mining methods.
 * Programming Languages: C++, Scala, Python, SQL, Bash, Latex, etc.
 * Platforms: Linux, Hadoop, Spark, Matlab, etc.
 
@@ -44,7 +44,7 @@ Xiami([www.xiami.com](http://www.xiami.com)) is a popular online music community
 
 ### Publications
 * **Y. Liu**, F. Wu, Y. Yang, Y. Zhuang, A. Hauptmann: Spline Regression Hashing for Fast Image Search: in IEEE Transactions on Image Processing, VOL. 21, NO. 10, OCTOBER 2012 (Top journal on Image Processing, Impact factor: 3.111).
-* X. Wang, **Y. Liu**, D. Wang, F. Wu: Cross-media Topic Mining on Wikipedia: in ACM Multimedia 2013 (Top conference on Multimedia).* **Y. Liu**, F. Wu, J. Shao, Y. Zhang, Y. Zhuang: Tag Clustering and Refinement on Semantic Unity Graph, in IEEE ICDM 2011 (Top conference on Data Mining).* Y. Zhuang, **Y. Liu**, F. Wu, J. Shao, Y. Zhang: Hypergraph Spectral Hashing for Similar- ity Search of Social Image, in ACM Multimedia 2011 (Top conference on Multimedia).
+* X. Wang, **Y. Liu**, D. Wang, F. Wu: Cross-media Topic Mining on Wikipedia: in ACM Multimedia 2013 (Top conference on Multimedia).* **Y. Liu**, F. Wu, J. Shao, Y. Zhang, Y. Zhuang: Tag Clustering and Refinement on Semantic Unity Graph, in IEEE ICDM 2011 (Top conference on Data Mining).* Y. Zhuang, **Y. Liu**, F. Wu, J. Shao, Y. Zhang: Hypergraph Spectral Hashing for Similarity Search of Social Image, in ACM Multimedia 2011 (Top conference on Multimedia).
 * **Y. Liu**, J. Shao, F. Wu, Y. Zhuang: Hypergraph Spectral Hashing for Image Retrieval with Heterogeneous Social Contexts: in Neurocomputing, Volume 119, 7 November 2013, Pages 49–58 (SCI, Impact Factor: 2.005).
 * Y. Zhang, W. Lu, **Y. Liu**, F. Wu: Kernelized Sparse Hashing for Scalable Image Retrieval: in Neurocomputing, accepted (SCI, Impact Factor: 2.005).* **Y. Liu**, J. Shao: High Dimensionality Reduction Using CUR Matrix Decomposition and Auto-encoder for Web Image Classification, in PCM 2010 (International Conference on Multimedia).
 
